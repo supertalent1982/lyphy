@@ -9,6 +9,7 @@
 #import "LyphyLandingViewController.h"
 #import "LyphySignupViewController.h"
 #import "LyphyLoginViewController.h"
+#import "LyphyInboxViewController.h"
 
 @interface LyphyLandingViewController ()
 
@@ -19,7 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+//    LyphyInboxViewController *inboxViewController = [[LyphyInboxViewController alloc] initWithNibName:@"LyphyInboxViewController" bundle:nil];
+//    [self.navigationController pushViewController:inboxViewController animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,8 +7,10 @@
 //
 
 #import "LyphyInboxViewController.h"
+#import "LyphySettingsViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface LyphyInboxViewController ()
+@interface LyphyInboxViewController () <UITableViewDataSource, UITableViewDataSource, LyphySettingsViewControllerDelegate>
 
 @end
 
@@ -18,7 +20,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
@@ -35,4 +37,46 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - LyphySettingsViewController Delegate Methods
+- (void)logout
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+#pragma mark - UITableView Deleagate Methods
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 140;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LyphyInboxCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InboxCell"];
+    
+    if ( cell == nil ){
+        [[NSBundle mainBundle] loadNibNamed:@"LyphyInboxCell" owner:self options:nil];
+        cell = self.cell;
+    }
+    
+    cell.imvAvatar.layer.cornerRadius = 30;
+    cell.imvAvatar.layer.masksToBounds = YES;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+- (IBAction)settingsBtnTapped:(id)sender {
+    LyphySettingsViewController *settingsViewController = [[LyphySettingsViewController alloc] initWithNibName:@"LyphySettingsViewController" bundle:nil];
+    [settingsViewController setDelegate:self];
+    [self presentViewController:settingsViewController animated:YES completion:nil];
+}
+
+- (IBAction)newLyphyBtnTapped:(id)sender {
+}
 @end

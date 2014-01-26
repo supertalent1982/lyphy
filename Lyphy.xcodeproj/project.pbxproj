@@ -38,6 +38,15 @@
 		3C8AEB1118948F0700E44AD2 /* LyphyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB0F18948F0700E44AD2 /* LyphyLoginViewController.xib */; };
 		3C8AEB141894932800E44AD2 /* add-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB121894932800E44AD2 /* add-btn.png */; };
 		3C8AEB151894932800E44AD2 /* settings-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB131894932800E44AD2 /* settings-btn.png */; };
+		3C8AEB1918949EB400E44AD2 /* LyphyInboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB1818949EB400E44AD2 /* LyphyInboxCell.m */; };
+		3C8AEB1B18949FD600E44AD2 /* badge-icon-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB1A18949FD600E44AD2 /* badge-icon-bg.png */; };
+		3C8AEB1D1894A22400E44AD2 /* avatar_unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB1C1894A22400E44AD2 /* avatar_unknown.png */; };
+		3C8AEB1F1894A68D00E44AD2 /* LyphyInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB1E1894A68D00E44AD2 /* LyphyInboxCell.xib */; };
+		3C8AEB261894AF8D00E44AD2 /* LyphySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */; };
+		3C8AEB271894AF8D00E44AD2 /* LyphySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */; };
+		3C8AEB2C1894B42F00E44AD2 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB2A1894B42F00E44AD2 /* left.png */; };
+		3C8AEB2D1894B42F00E44AD2 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB2B1894B42F00E44AD2 /* right.png */; };
+		3C8AEB311894C4FE00E44AD2 /* settings-cell-bg-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB301894C4FE00E44AD2 /* settings-cell-bg-selected.png */; };
 		3CE760581893C979007F393F /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604D1893C979007F393F /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE760591893C979007F393F /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604F1893C979007F393F /* ImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE7605A1893C979007F393F /* ImageCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760511893C979007F393F /* ImageCacheObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -88,6 +97,17 @@
 		3C8AEB0F18948F0700E44AD2 /* LyphyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyLoginViewController.xib; sourceTree = "<group>"; };
 		3C8AEB121894932800E44AD2 /* add-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-btn.png"; sourceTree = "<group>"; };
 		3C8AEB131894932800E44AD2 /* settings-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-btn.png"; sourceTree = "<group>"; };
+		3C8AEB1718949EB400E44AD2 /* LyphyInboxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyInboxCell.h; sourceTree = "<group>"; };
+		3C8AEB1818949EB400E44AD2 /* LyphyInboxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyInboxCell.m; sourceTree = "<group>"; };
+		3C8AEB1A18949FD600E44AD2 /* badge-icon-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-icon-bg.png"; sourceTree = "<group>"; };
+		3C8AEB1C1894A22400E44AD2 /* avatar_unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_unknown.png; sourceTree = "<group>"; };
+		3C8AEB1E1894A68D00E44AD2 /* LyphyInboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyInboxCell.xib; sourceTree = "<group>"; };
+		3C8AEB231894AF8C00E44AD2 /* LyphySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphySettingsViewController.h; sourceTree = "<group>"; };
+		3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphySettingsViewController.m; sourceTree = "<group>"; };
+		3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphySettingsViewController.xib; sourceTree = "<group>"; };
+		3C8AEB2A1894B42F00E44AD2 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		3C8AEB2B1894B42F00E44AD2 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		3C8AEB301894C4FE00E44AD2 /* settings-cell-bg-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-cell-bg-selected.png"; sourceTree = "<group>"; };
 		3CE7604C1893C979007F393F /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		3CE7604D1893C979007F393F /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		3CE7604E1893C979007F393F /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
@@ -168,6 +188,10 @@
 				3C8AEB0818948D2400E44AD2 /* LyphyInboxViewController.h */,
 				3C8AEB0918948D2400E44AD2 /* LyphyInboxViewController.m */,
 				3C8AEB0A18948D2400E44AD2 /* LyphyInboxViewController.xib */,
+				3C8AEB231894AF8C00E44AD2 /* LyphySettingsViewController.h */,
+				3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */,
+				3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */,
+				3C8AEB1618949E8300E44AD2 /* CustomizedTableViewCells */,
 				3CE7604A1893C979007F393F /* Utils */,
 				3C0B578F189361C200FF4C48 /* Supporting Files */,
 			);
@@ -191,6 +215,9 @@
 		3C13462518937BDB007A52EE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3C8AEB301894C4FE00E44AD2 /* settings-cell-bg-selected.png */,
+				3C8AEB1C1894A22400E44AD2 /* avatar_unknown.png */,
+				3C8AEB1A18949FD600E44AD2 /* badge-icon-bg.png */,
 				3C8AEB121894932800E44AD2 /* add-btn.png */,
 				3C8AEB131894932800E44AD2 /* settings-btn.png */,
 				3C8AEB061893D45600E44AD2 /* next-btn.png */,
@@ -201,8 +228,20 @@
 				3C13462618937BDB007A52EE /* join-btn.png */,
 				3C13462718937BDB007A52EE /* login-btn.png */,
 				3C13462818937BDB007A52EE /* logo.png */,
+				3C8AEB2A1894B42F00E44AD2 /* left.png */,
+				3C8AEB2B1894B42F00E44AD2 /* right.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		3C8AEB1618949E8300E44AD2 /* CustomizedTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3C8AEB1718949EB400E44AD2 /* LyphyInboxCell.h */,
+				3C8AEB1818949EB400E44AD2 /* LyphyInboxCell.m */,
+				3C8AEB1E1894A68D00E44AD2 /* LyphyInboxCell.xib */,
+			);
+			path = CustomizedTableViewCells;
 			sourceTree = "<group>";
 		};
 		3CE7604A1893C979007F393F /* Utils */ = {
@@ -318,6 +357,13 @@
 				3C8AEB1118948F0700E44AD2 /* LyphyLoginViewController.xib in Resources */,
 				3C8AEB141894932800E44AD2 /* add-btn.png in Resources */,
 				3C8AEB151894932800E44AD2 /* settings-btn.png in Resources */,
+				3C8AEB1B18949FD600E44AD2 /* badge-icon-bg.png in Resources */,
+				3C8AEB1D1894A22400E44AD2 /* avatar_unknown.png in Resources */,
+				3C8AEB1F1894A68D00E44AD2 /* LyphyInboxCell.xib in Resources */,
+				3C8AEB271894AF8D00E44AD2 /* LyphySettingsViewController.xib in Resources */,
+				3C8AEB2C1894B42F00E44AD2 /* left.png in Resources */,
+				3C8AEB2D1894B42F00E44AD2 /* right.png in Resources */,
+				3C8AEB311894C4FE00E44AD2 /* settings-cell-bg-selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +387,8 @@
 				3C8AEB041893D39000E44AD2 /* LyphySyncPhoneViewController.m in Sources */,
 				3C8AEB0B18948D2400E44AD2 /* LyphyInboxViewController.m in Sources */,
 				3C8AEB1018948F0700E44AD2 /* LyphyLoginViewController.m in Sources */,
+				3C8AEB1918949EB400E44AD2 /* LyphyInboxCell.m in Sources */,
+				3C8AEB261894AF8D00E44AD2 /* LyphySettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

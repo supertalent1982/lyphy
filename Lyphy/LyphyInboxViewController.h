@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LyphyInboxCell.h"
 
 @interface LyphyInboxViewController : UIViewController
+@property (strong, nonatomic) IBOutlet LyphyInboxCell *cell;
 
+- (IBAction)settingsBtnTapped:(id)sender;
+- (IBAction)newLyphyBtnTapped:(id)sender;
 @end
