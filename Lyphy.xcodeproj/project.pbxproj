@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C0B5789189361C200FF4C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B5788189361C200FF4C48 /* UIKit.framework */; };
+		3C0B578B189361C200FF4C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B578A189361C200FF4C48 /* Foundation.framework */; };
+		3C0B578D189361C200FF4C48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B578C189361C200FF4C48 /* CoreGraphics.framework */; };
+		3C0B5793189361C200FF4C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B5791189361C200FF4C48 /* InfoPlist.strings */; };
+		3C0B5795189361C200FF4C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B5794189361C200FF4C48 /* main.m */; };
+		3C0B5799189361C200FF4C48 /* LyphyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B5798189361C200FF4C48 /* LyphyAppDelegate.m */; };
+		3C0B579B189361C200FF4C48 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B579A189361C200FF4C48 /* Default.png */; };
+		3C0B579D189361C200FF4C48 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B579C189361C200FF4C48 /* Default@2x.png */; };
+		3C0B579F189361C200FF4C48 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B579E189361C200FF4C48 /* Default-568h@2x.png */; };
+		3C0B57A2189361C200FF4C48 /* LyphyLandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B57A1189361C200FF4C48 /* LyphyLandingViewController.m */; };
+		3C0B57A5189361C200FF4C48 /* LyphyLandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0B57A3189361C200FF4C48 /* LyphyLandingViewController.xib */; };
+		3C13462918937BDB007A52EE /* join-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C13462618937BDB007A52EE /* join-btn.png */; };
+		3C13462A18937BDB007A52EE /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C13462718937BDB007A52EE /* login-btn.png */; };
+		3C13462B18937BDB007A52EE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C13462818937BDB007A52EE /* logo.png */; };
+		3C13463418938462007A52EE /* LyphySignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13463218938462007A52EE /* LyphySignupViewController.m */; };
+		3C13463518938462007A52EE /* LyphySignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C13463318938462007A52EE /* LyphySignupViewController.xib */; };
+		3C134639189387F5007A52EE /* back-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C134636189387F5007A52EE /* back-btn.png */; };
+		3C13463A189387F5007A52EE /* enter-btn-activated.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C134637189387F5007A52EE /* enter-btn-activated.png */; };
+		3C13463B189387F5007A52EE /* enter-btn-deactivated.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C134638189387F5007A52EE /* enter-btn-deactivated.png */; };
+		3C13463F1893A2A9007A52EE /* LyphyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13463D1893A2A8007A52EE /* LyphyProfileViewController.m */; };
+		3C1346401893A2A9007A52EE /* LyphyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C13463E1893A2A8007A52EE /* LyphyProfileViewController.xib */; };
+		3C1346421893A343007A52EE /* photo-select-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1346411893A343007A52EE /* photo-select-btn.png */; };
+		3C8AEB041893D39000E44AD2 /* LyphySyncPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB021893D39000E44AD2 /* LyphySyncPhoneViewController.m */; };
+		3C8AEB051893D39000E44AD2 /* LyphySyncPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB031893D39000E44AD2 /* LyphySyncPhoneViewController.xib */; };
+		3C8AEB071893D45600E44AD2 /* next-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB061893D45600E44AD2 /* next-btn.png */; };
+		3CE760581893C979007F393F /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604D1893C979007F393F /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE760591893C979007F393F /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604F1893C979007F393F /* ImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE7605A1893C979007F393F /* ImageCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760511893C979007F393F /* ImageCacheObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE7605B1893C979007F393F /* DTActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760541893C979007F393F /* DTActionSheet.m */; };
+		3CE7605C1893C979007F393F /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760571893C979007F393F /* ImagePickerViewController.m */; };
+		3CE7605E1893CACE007F393F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE7605D1893CACE007F393F /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C0B5785189361C200FF4C48 /* Lyphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0B5788189361C200FF4C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C0B578A189361C200FF4C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C0B578C189361C200FF4C48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C0B5790189361C200FF4C48 /* Lyphy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lyphy-Info.plist"; sourceTree = "<group>"; };
+		3C0B5792189361C200FF4C48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C0B5794189361C200FF4C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C0B5796189361C200FF4C48 /* Lyphy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lyphy-Prefix.pch"; sourceTree = "<group>"; };
+		3C0B5797189361C200FF4C48 /* LyphyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyphyAppDelegate.h; sourceTree = "<group>"; };
+		3C0B5798189361C200FF4C48 /* LyphyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyphyAppDelegate.m; sourceTree = "<group>"; };
+		3C0B579A189361C200FF4C48 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3C0B579C189361C200FF4C48 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3C0B579E189361C200FF4C48 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C0B57A0189361C200FF4C48 /* LyphyLandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyphyLandingViewController.h; sourceTree = "<group>"; };
+		3C0B57A1189361C200FF4C48 /* LyphyLandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyphyLandingViewController.m; sourceTree = "<group>"; };
+		3C0B57A4189361C200FF4C48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LyphyLandingViewController.xib; sourceTree = "<group>"; };
+		3C13462618937BDB007A52EE /* join-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "join-btn.png"; sourceTree = "<group>"; };
+		3C13462718937BDB007A52EE /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
+		3C13462818937BDB007A52EE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3C13463118938462007A52EE /* LyphySignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphySignupViewController.h; sourceTree = "<group>"; };
+		3C13463218938462007A52EE /* LyphySignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphySignupViewController.m; sourceTree = "<group>"; };
+		3C13463318938462007A52EE /* LyphySignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphySignupViewController.xib; sourceTree = "<group>"; };
+		3C134636189387F5007A52EE /* back-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-btn.png"; sourceTree = "<group>"; };
+		3C134637189387F5007A52EE /* enter-btn-activated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enter-btn-activated.png"; sourceTree = "<group>"; };
+		3C134638189387F5007A52EE /* enter-btn-deactivated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enter-btn-deactivated.png"; sourceTree = "<group>"; };
+		3C13463C1893A2A8007A52EE /* LyphyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyProfileViewController.h; sourceTree = "<group>"; };
+		3C13463D1893A2A8007A52EE /* LyphyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyProfileViewController.m; sourceTree = "<group>"; };
+		3C13463E1893A2A8007A52EE /* LyphyProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyProfileViewController.xib; sourceTree = "<group>"; };
+		3C1346411893A343007A52EE /* photo-select-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-select-btn.png"; sourceTree = "<group>"; };
+		3C8AEB011893D39000E44AD2 /* LyphySyncPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphySyncPhoneViewController.h; sourceTree = "<group>"; };
+		3C8AEB021893D39000E44AD2 /* LyphySyncPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphySyncPhoneViewController.m; sourceTree = "<group>"; };
+		3C8AEB031893D39000E44AD2 /* LyphySyncPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphySyncPhoneViewController.xib; sourceTree = "<group>"; };
+		3C8AEB061893D45600E44AD2 /* next-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next-btn.png"; sourceTree = "<group>"; };
+		3CE7604C1893C979007F393F /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		3CE7604D1893C979007F393F /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		3CE7604E1893C979007F393F /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		3CE7604F1893C979007F393F /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		3CE760501893C979007F393F /* ImageCacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheObject.h; sourceTree = "<group>"; };
+		3CE760511893C979007F393F /* ImageCacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheObject.m; sourceTree = "<group>"; };
+		3CE760531893C979007F393F /* DTActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTActionSheet.h; sourceTree = "<group>"; };
+		3CE760541893C979007F393F /* DTActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTActionSheet.m; sourceTree = "<group>"; };
+		3CE760561893C979007F393F /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		3CE760571893C979007F393F /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
+		3CE7605D1893CACE007F393F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C0B5782189361C200FF4C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE7605E1893CACE007F393F /* MobileCoreServices.framework in Frameworks */,
+				3C0B5789189361C200FF4C48 /* UIKit.framework in Frameworks */,
+				3C0B578B189361C200FF4C48 /* Foundation.framework in Frameworks */,
+				3C0B578D189361C200FF4C48 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0B577C189361C200FF4C48 = {
+			isa = PBXGroup;
+			children = (
+				3C13462518937BDB007A52EE /* Images */,
+				3C0B578E189361C200FF4C48 /* Lyphy */,
+				3C0B5787189361C200FF4C48 /* Frameworks */,
+				3C0B5786189361C200FF4C48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C0B5786189361C200FF4C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C0B5785189361C200FF4C48 /* Lyphy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C0B5787189361C200FF4C48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7605D1893CACE007F393F /* MobileCoreServices.framework */,
+				3C0B5788189361C200FF4C48 /* UIKit.framework */,
+				3C0B578A189361C200FF4C48 /* Foundation.framework */,
+				3C0B578C189361C200FF4C48 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C0B578E189361C200FF4C48 /* Lyphy */ = {
+			isa = PBXGroup;
+			children = (
+				3C0B5797189361C200FF4C48 /* LyphyAppDelegate.h */,
+				3C0B5798189361C200FF4C48 /* LyphyAppDelegate.m */,
+				3C0B57A0189361C200FF4C48 /* LyphyLandingViewController.h */,
+				3C0B57A1189361C200FF4C48 /* LyphyLandingViewController.m */,
+				3C0B57A3189361C200FF4C48 /* LyphyLandingViewController.xib */,
+				3C13463118938462007A52EE /* LyphySignupViewController.h */,
+				3C13463218938462007A52EE /* LyphySignupViewController.m */,
+				3C13463318938462007A52EE /* LyphySignupViewController.xib */,
+				3C13463C1893A2A8007A52EE /* LyphyProfileViewController.h */,
+				3C13463D1893A2A8007A52EE /* LyphyProfileViewController.m */,
+				3C13463E1893A2A8007A52EE /* LyphyProfileViewController.xib */,
+				3C8AEB011893D39000E44AD2 /* LyphySyncPhoneViewController.h */,
+				3C8AEB021893D39000E44AD2 /* LyphySyncPhoneViewController.m */,
+				3C8AEB031893D39000E44AD2 /* LyphySyncPhoneViewController.xib */,
+				3CE7604A1893C979007F393F /* Utils */,
+				3C0B578F189361C200FF4C48 /* Supporting Files */,
+			);
+			path = Lyphy;
+			sourceTree = "<group>";
+		};
+		3C0B578F189361C200FF4C48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C0B5790189361C200FF4C48 /* Lyphy-Info.plist */,
+				3C0B5791189361C200FF4C48 /* InfoPlist.strings */,
+				3C0B5794189361C200FF4C48 /* main.m */,
+				3C0B5796189361C200FF4C48 /* Lyphy-Prefix.pch */,
+				3C0B579A189361C200FF4C48 /* Default.png */,
+				3C0B579C189361C200FF4C48 /* Default@2x.png */,
+				3C0B579E189361C200FF4C48 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C13462518937BDB007A52EE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C8AEB061893D45600E44AD2 /* next-btn.png */,
+				3C1346411893A343007A52EE /* photo-select-btn.png */,
+				3C134636189387F5007A52EE /* back-btn.png */,
+				3C134637189387F5007A52EE /* enter-btn-activated.png */,
+				3C134638189387F5007A52EE /* enter-btn-deactivated.png */,
+				3C13462618937BDB007A52EE /* join-btn.png */,
+				3C13462718937BDB007A52EE /* login-btn.png */,
+				3C13462818937BDB007A52EE /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3CE7604A1893C979007F393F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7604B1893C979007F393F /* AsyncImageView */,
+				3CE760521893C979007F393F /* DTFoundation */,
+				3CE760551893C979007F393F /* ImagePickerViewController */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3CE7604B1893C979007F393F /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7604C1893C979007F393F /* AsyncImageView.h */,
+				3CE7604D1893C979007F393F /* AsyncImageView.m */,
+				3CE7604E1893C979007F393F /* ImageCache.h */,
+				3CE7604F1893C979007F393F /* ImageCache.m */,
+				3CE760501893C979007F393F /* ImageCacheObject.h */,
+				3CE760511893C979007F393F /* ImageCacheObject.m */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
+		3CE760521893C979007F393F /* DTFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				3CE760531893C979007F393F /* DTActionSheet.h */,
+				3CE760541893C979007F393F /* DTActionSheet.m */,
+			);
+			path = DTFoundation;
+			sourceTree = "<group>";
+		};
+		3CE760551893C979007F393F /* ImagePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CE760561893C979007F393F /* ImagePickerViewController.h */,
+				3CE760571893C979007F393F /* ImagePickerViewController.m */,
+			);
+			path = ImagePickerViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C0B5784189361C200FF4C48 /* Lyphy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0B57A8189361C200FF4C48 /* Build configuration list for PBXNativeTarget "Lyphy" */;
+			buildPhases = (
+				3C0B5781189361C200FF4C48 /* Sources */,
+				3C0B5782189361C200FF4C48 /* Frameworks */,
+				3C0B5783189361C200FF4C48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lyphy;
+			productName = Lyphy;
+			productReference = 3C0B5785189361C200FF4C48 /* Lyphy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C0B577D189361C200FF4C48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lyphy;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = LiangXing;
+			};
+			buildConfigurationList = 3C0B5780189361C200FF4C48 /* Build configuration list for PBXProject "Lyphy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C0B577C189361C200FF4C48;
+			productRefGroup = 3C0B5786189361C200FF4C48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C0B5784189361C200FF4C48 /* Lyphy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C0B5783189361C200FF4C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0B5793189361C200FF4C48 /* InfoPlist.strings in Resources */,
+				3C0B579B189361C200FF4C48 /* Default.png in Resources */,
+				3C0B579D189361C200FF4C48 /* Default@2x.png in Resources */,
+				3C0B579F189361C200FF4C48 /* Default-568h@2x.png in Resources */,
+				3C0B57A5189361C200FF4C48 /* LyphyLandingViewController.xib in Resources */,
+				3C13462918937BDB007A52EE /* join-btn.png in Resources */,
+				3C13462A18937BDB007A52EE /* login-btn.png in Resources */,
+				3C13462B18937BDB007A52EE /* logo.png in Resources */,
+				3C13463518938462007A52EE /* LyphySignupViewController.xib in Resources */,
+				3C134639189387F5007A52EE /* back-btn.png in Resources */,
+				3C13463A189387F5007A52EE /* enter-btn-activated.png in Resources */,
+				3C13463B189387F5007A52EE /* enter-btn-deactivated.png in Resources */,
+				3C1346401893A2A9007A52EE /* LyphyProfileViewController.xib in Resources */,
+				3C1346421893A343007A52EE /* photo-select-btn.png in Resources */,
+				3C8AEB051893D39000E44AD2 /* LyphySyncPhoneViewController.xib in Resources */,
+				3C8AEB071893D45600E44AD2 /* next-btn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C0B5781189361C200FF4C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0B5795189361C200FF4C48 /* main.m in Sources */,
+				3C0B5799189361C200FF4C48 /* LyphyAppDelegate.m in Sources */,
+				3C0B57A2189361C200FF4C48 /* LyphyLandingViewController.m in Sources */,
+				3C13463418938462007A52EE /* LyphySignupViewController.m in Sources */,
+				3C13463F1893A2A9007A52EE /* LyphyProfileViewController.m in Sources */,
+				3CE760581893C979007F393F /* AsyncImageView.m in Sources */,
+				3CE760591893C979007F393F /* ImageCache.m in Sources */,
+				3CE7605A1893C979007F393F /* ImageCacheObject.m in Sources */,
+				3CE7605B1893C979007F393F /* DTActionSheet.m in Sources */,
+				3CE7605C1893C979007F393F /* ImagePickerViewController.m in Sources */,
+				3C8AEB041893D39000E44AD2 /* LyphySyncPhoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C0B5791189361C200FF4C48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C0B5792189361C200FF4C48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C0B57A3189361C200FF4C48 /* LyphyLandingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C0B57A4189361C200FF4C48 /* en */,
+			);
+			name = LyphyLandingViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C0B57A6189361C200FF4C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C0B57A7189361C200FF4C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C0B57A9189361C200FF4C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lyphy/Lyphy-Prefix.pch";
+				INFOPLIST_FILE = "Lyphy/Lyphy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C0B57AA189361C200FF4C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lyphy/Lyphy-Prefix.pch";
+				INFOPLIST_FILE = "Lyphy/Lyphy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C0B5780189361C200FF4C48 /* Build configuration list for PBXProject "Lyphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0B57A6189361C200FF4C48 /* Debug */,
+				3C0B57A7189361C200FF4C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0B57A8189361C200FF4C48 /* Build configuration list for PBXNativeTarget "Lyphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0B57A9189361C200FF4C48 /* Debug */,
+				3C0B57AA189361C200FF4C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C0B577D189361C200FF4C48 /* Project object */;
+}
