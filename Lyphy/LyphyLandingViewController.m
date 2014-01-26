@@ -8,6 +8,7 @@
 
 #import "LyphyLandingViewController.h"
 #import "LyphySignupViewController.h"
+#import "LyphyLoginViewController.h"
 
 @interface LyphyLandingViewController ()
 
@@ -31,4 +32,10 @@
     LyphySignupViewController *signupViewController = [[LyphySignupViewController alloc] initWithNibName:@"LyphySignupViewController" bundle:nil];
     [self.navigationController pushViewController:signupViewController animated:YES];
 }
+
+- (IBAction)loginBtnTapped:(id)sender {
+    LyphyLoginViewController *loginViewController = [[LyphyLoginViewController alloc] initWithNibName:@"LyphyLoginViewController" bundle:nil];
+    [self.navigationController pushViewController:loginViewController animated:YES];
+}
+
 @end

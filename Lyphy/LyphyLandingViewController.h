@@ -11,4 +11,6 @@
 @interface LyphyLandingViewController : UIViewController
 
 - (IBAction)signupBtnTapped:(id)sender;
+- (IBAction)loginBtnTapped:(id)sender;
+
 @end

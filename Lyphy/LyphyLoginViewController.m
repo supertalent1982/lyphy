@@ -1,19 +1,19 @@
 //
-//  LyphySyncPhoneViewController.m
+//  LyphyLoginViewController.m
 //  Lyphy
 //
-//  Created by Liang Xing on 25/1/14.
+//  Created by Liang Xing on 26/1/14.
 //  Copyright (c) 2014 LiangXing. All rights reserved.
 //
 
-#import "LyphySyncPhoneViewController.h"
+#import "LyphyLoginViewController.h"
 #import "LyphyInboxViewController.h"
 
-@interface LyphySyncPhoneViewController () <UITextFieldDelegate>
+@interface LyphyLoginViewController () <UITextFieldDelegate>
 
 @end
 
-@implementation LyphySyncPhoneViewController
+@implementation LyphyLoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,28 +38,33 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)textFieldChanged:(id)sender {
-    if ([self.edtMobileNumber.text isEqual:@""]) {
-        [self.syncPhoneBtn setEnabled:NO];
-    } else {
-        [self.syncPhoneBtn setEnabled:YES];
-    }
+
+- (IBAction)backBtnTapped:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)nextBtnTapped:(id)sender {
-    [self.edtMobileNumber resignFirstResponder];
+    [self.edtNewPassword resignFirstResponder];
+    [self.edtEmailAddress resignFirstResponder];
     
     LyphyInboxViewController *inboxViewController = [[LyphyInboxViewController alloc] initWithNibName:@"LyphyInboxViewController" bundle:nil];
     [self.navigationController pushViewController:inboxViewController animated:YES];
 }
 
-- (IBAction)syncPhoneBtnTapped:(id)sender {
-
+- (IBAction)textFieldChanged:(id)sender {
+    if ([self.edtEmailAddress.text isEqual:@""] || [self.edtNewPassword.text isEqual:@""]) {
+        [self.nextBtn setEnabled:NO];
+    } else {
+        [self.nextBtn setEnabled:YES];
+    }
 }
 
 #pragma mark - UITextField Delegate Method
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
+    if (textField == self.edtEmailAddress)
+        [self.edtNewPassword becomeFirstResponder];
+    else if (textField == self.edtNewPassword)
+        [self.edtNewPassword resignFirstResponder];
     
     return YES;
 }
