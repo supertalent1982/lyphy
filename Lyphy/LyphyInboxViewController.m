@@ -8,6 +8,10 @@
 
 #import "LyphyInboxViewController.h"
 #import "LyphySettingsViewController.h"
+#import "SWRevealViewController.h"
+#import "LyphyPhotoUploadViewController.h"
+#import "LyphyChatViewController.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 @interface LyphyInboxViewController () <UITableViewDataSource, UITableViewDataSource, LyphySettingsViewControllerDelegate>
@@ -69,6 +73,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    LyphyPhotoUploadViewController *photoUploadViewController = [[LyphyPhotoUploadViewController alloc] initWithNibName:@"LyphyPhotoUploadViewController" bundle:nil];
+    LyphyChatViewController *chatViewController = [[LyphyChatViewController alloc] initWithNibName:@"LyphyChatViewController" bundle:nil];
+    
+    SWRevealViewController *chattingRoomViewController = [[SWRevealViewController alloc] initWithRearViewController:photoUploadViewController frontViewController:chatViewController];
+    chattingRoomViewController.delegate = photoUploadViewController;
+    [self.navigationController pushViewController:chattingRoomViewController animated:YES];
 }
 
 - (IBAction)settingsBtnTapped:(id)sender {

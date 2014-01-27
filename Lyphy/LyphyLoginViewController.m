@@ -8,6 +8,8 @@
 
 #import "LyphyLoginViewController.h"
 #import "LyphyInboxViewController.h"
+#import "LyphySettings.h"
+#import "LyphyAppDelegate.h"
 
 @interface LyphyLoginViewController () <UITextFieldDelegate>
 
@@ -28,8 +30,6 @@
 {
     [super viewDidLoad];
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +46,13 @@
 - (IBAction)nextBtnTapped:(id)sender {
     [self.edtNewPassword resignFirstResponder];
     [self.edtEmailAddress resignFirstResponder];
+    
+    [[LyphySettings sharedInstance] setUsername:self.edtEmailAddress.text];
+    [[LyphySettings sharedInstance] setPassword:self.edtNewPassword.text];
+   
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@chatape.com", [LyphySettings sharedInstance].username] forKey:@"userID"];
+    [[NSUserDefaults standardUserDefaults] setObject:[LyphySettings sharedInstance].password forKey:@"password"];
+    [[LyphyAppDelegate sharedInstance] connect];
     
     LyphyInboxViewController *inboxViewController = [[LyphyInboxViewController alloc] initWithNibName:@"LyphyInboxViewController" bundle:nil];
     [self.navigationController pushViewController:inboxViewController animated:YES];
