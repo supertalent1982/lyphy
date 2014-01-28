@@ -1314,8 +1314,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bai Jin Zhin (8NBD6335S8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bai Jin Zhin (8NBD6335S8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1328,8 +1328,8 @@
 					"\"$(SRCROOT)/../../Vendor/libidn\"",
 				);
 				PRODUCT_NAME = iPhoneXMPP;
-				PROVISIONING_PROFILE = "40421701-3DE6-40F2-A07D-386888AB251D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "40421701-3DE6-40F2-A07D-386888AB251D";
+				PROVISIONING_PROFILE = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
 			};
 			name = Debug;
 		};
@@ -1338,7 +1338,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bai Jin Zhin (8NBD6335S8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Magee (24W2ZNC3CJ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneXMPP_Prefix.pch;
@@ -1349,7 +1350,8 @@
 					"\"$(SRCROOT)/../../Vendor/libidn\"",
 				);
 				PRODUCT_NAME = iPhoneXMPP;
-				PROVISIONING_PROFILE = "40421701-3DE6-40F2-A07D-386888AB251D";
+				PROVISIONING_PROFILE = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8BAAD596-484C-41BC-B302-813EFFFF04F6";
 			};
 			name = Release;
 		};

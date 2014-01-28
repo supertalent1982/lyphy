@@ -10,6 +10,7 @@
 
 #import "LyphyLandingViewController.h"
 #import "LyphySettings.h"
+#import "LyphyNetworkClient.h"
 
 #import "XMPP.h"
 #import "XMPPReconnect.h"
@@ -55,6 +56,12 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     [self.viewController setNavigationBarHidden:YES];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    // add loading view
+    [self setLoadingView:[[LyphyLoadingView alloc] init]];
+    [self.loadingView setFrame:CGRectMake(0, 0, 320, 568)];
+    [self.loadingView setAlpha:0];
+    [self.viewController.view addSubview:self.loadingView];
     
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
@@ -111,6 +118,20 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     [self teardownStream];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark Core Data
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (NSManagedObjectContext *)managedObjectContext_roster
+{
+	return [xmppRosterStorage mainThreadManagedObjectContext];
+}
+
+- (NSManagedObjectContext *)managedObjectContext_capabilities
+{
+	return [xmppCapabilitiesStorage mainThreadManagedObjectContext];
 }
 
 #pragma mark Private
@@ -226,7 +247,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 	//
 	// If you don't specify a hostPort, then the default (5222) will be used.
 	
-	[xmppStream setHostName:@"chatape.com"];
+	[xmppStream setHostName:LYPHY_XMPP_SERVER_NAME];
     [xmppStream setHostPort:5222];
 	
     
@@ -458,7 +479,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
         //NSString *msgType = [[message elementForName:@"messageType"] stringValue];
 		NSString *username = user.jid.user;
         
-        if ([username isEqualToString:[LyphySettings sharedInstance].username])
+        if ([username isEqualToString:[LyphySettings sharedInstance].userName])
             return;
         
         if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateActive)
@@ -681,7 +702,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     NSXMLElement *query = [[NSXMLElement alloc] initWithXMLString:@"<query xmlns='http://jabber.org/protocol/disco#items' node='all users'/>"
                                                             error:&error];
     XMPPIQ *iq = [XMPPIQ iqWithType:@"get"
-                                 to:[XMPPJID jidWithString:@"chatape.com"]
+                                 to:[XMPPJID jidWithString:LYPHY_XMPP_SERVER_NAME]
                           elementID:[xmppStream generateUUID] child:query];
     [xmppStream sendElement:iq];
     

@@ -11,6 +11,10 @@
 @interface LyphySettings : NSObject
 + (LyphySettings *)sharedInstance;
 
-@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *userName;
+@property (strong, nonatomic) NSString *userFullName;
+@property (strong, nonatomic) NSString *emailAddress;
+@property (strong, nonatomic) UIImage *imgPhoto;
 @property (strong, nonatomic) NSString *password;
+@property (strong, nonatomic) NSString *phoneNumber;
 @end

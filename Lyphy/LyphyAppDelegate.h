@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XMPPFramework.h"
+#import "LyphyLoadingView.h"
 
 #define kInviteSubscription 20140101
 
@@ -32,6 +33,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UINavigationController *viewController;
+@property (nonatomic,strong) LyphyLoadingView   *loadingView;
 
 @property (nonatomic, strong, readonly) XMPPStream *xmppStream;
 @property (nonatomic, strong, readonly) XMPPReconnect *xmppReconnect;

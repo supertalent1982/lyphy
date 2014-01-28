@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 #import "LyphyInboxCell.h"
 
-@interface LyphyInboxViewController : UIViewController
+@interface LyphyInboxViewController : UIViewController {
+    NSFetchedResultsController *fetchedResultsController;
+}
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet LyphyInboxCell *cell;
 
 - (IBAction)settingsBtnTapped:(id)sender;

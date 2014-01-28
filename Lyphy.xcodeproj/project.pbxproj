@@ -61,130 +61,130 @@
 		3C8AEE551895CB8200E44AD2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB561895CB7B00E44AD2 /* .gitignore */; };
 		3C8AEE561895CB8200E44AD2 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB571895CB7B00E44AD2 /* .gitmodules */; };
 		3C8AEE571895CB8200E44AD2 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB581895CB7B00E44AD2 /* .hgignore */; };
-		3C8AEE581895CB8200E44AD2 /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB5C1895CB7B00E44AD2 /* XMPPAnonymousAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE591895CB8200E44AD2 /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB5F1895CB7B00E44AD2 /* XMPPDeprecatedDigestAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5A1895CB8200E44AD2 /* XMPPDeprecatedPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB621895CB7B00E44AD2 /* XMPPDeprecatedPlainAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5B1895CB8200E44AD2 /* XMPPDigestMD5Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB651895CB7B00E44AD2 /* XMPPDigestMD5Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5C1895CB8200E44AD2 /* XMPPPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB681895CB7B00E44AD2 /* XMPPPlainAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5D1895CB8200E44AD2 /* XMPPXFacebookPlatformAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB6B1895CB7B00E44AD2 /* XMPPXFacebookPlatformAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5E1895CB8200E44AD2 /* NSData+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB6F1895CB7B00E44AD2 /* NSData+XMPP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE5F1895CB8200E44AD2 /* NSNumber+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB711895CB7B00E44AD2 /* NSNumber+XMPP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE601895CB8200E44AD2 /* NSXMLElement+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB731895CB7B00E44AD2 /* NSXMLElement+XMPP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8AEE581895CB8200E44AD2 /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB5C1895CB7B00E44AD2 /* XMPPAnonymousAuthentication.m */; };
+		3C8AEE591895CB8200E44AD2 /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB5F1895CB7B00E44AD2 /* XMPPDeprecatedDigestAuthentication.m */; };
+		3C8AEE5A1895CB8200E44AD2 /* XMPPDeprecatedPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB621895CB7B00E44AD2 /* XMPPDeprecatedPlainAuthentication.m */; };
+		3C8AEE5B1895CB8200E44AD2 /* XMPPDigestMD5Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB651895CB7B00E44AD2 /* XMPPDigestMD5Authentication.m */; };
+		3C8AEE5C1895CB8200E44AD2 /* XMPPPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB681895CB7B00E44AD2 /* XMPPPlainAuthentication.m */; };
+		3C8AEE5D1895CB8200E44AD2 /* XMPPXFacebookPlatformAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB6B1895CB7B00E44AD2 /* XMPPXFacebookPlatformAuthentication.m */; };
+		3C8AEE5E1895CB8200E44AD2 /* NSData+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB6F1895CB7B00E44AD2 /* NSData+XMPP.m */; };
+		3C8AEE5F1895CB8200E44AD2 /* NSNumber+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB711895CB7B00E44AD2 /* NSNumber+XMPP.m */; };
+		3C8AEE601895CB8200E44AD2 /* NSXMLElement+XMPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB731895CB7B00E44AD2 /* NSXMLElement+XMPP.m */; };
 		3C8AEE611895CB8200E44AD2 /* copying.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB741895CB7B00E44AD2 /* copying.txt */; };
-		3C8AEE621895CB8200E44AD2 /* XMPPElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB781895CB7B00E44AD2 /* XMPPElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE631895CB8200E44AD2 /* XMPPIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB7B1895CB7B00E44AD2 /* XMPPIQ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE641895CB8200E44AD2 /* XMPPJID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB7D1895CB7B00E44AD2 /* XMPPJID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE651895CB8200E44AD2 /* XMPPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB801895CB7B00E44AD2 /* XMPPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE661895CB8200E44AD2 /* XMPPModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB821895CB7B00E44AD2 /* XMPPModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE671895CB8200E44AD2 /* XMPPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB841895CB7B00E44AD2 /* XMPPParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE681895CB8200E44AD2 /* XMPPPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB861895CB7B00E44AD2 /* XMPPPresence.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE691895CB8200E44AD2 /* XMPPStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB881895CB7B00E44AD2 /* XMPPStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6A1895CB8200E44AD2 /* XMPPBandwidthMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB8C1895CB7B00E44AD2 /* XMPPBandwidthMonitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6B1895CB8200E44AD2 /* XMPPCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB8F1895CB7B00E44AD2 /* XMPPCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6C1895CB8200E44AD2 /* XMPPGoogleSharedStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB931895CB7B00E44AD2 /* XMPPGoogleSharedStatus.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6D1895CB8200E44AD2 /* XMPPProcessOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB961895CB7B00E44AD2 /* XMPPProcessOne.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6E1895CB8200E44AD2 /* XMPPReconnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB991895CB7B00E44AD2 /* XMPPReconnect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE6F1895CB8200E44AD2 /* XMPPGroupCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB9D1895CB7B00E44AD2 /* XMPPGroupCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE701895CB8200E44AD2 /* XMPPResourceCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB9F1895CB7B00E44AD2 /* XMPPResourceCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE711895CB8200E44AD2 /* XMPPRoster.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA01895CB7B00E44AD2 /* XMPPRoster.xcdatamodel */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE721895CB8200E44AD2 /* XMPPRosterCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA21895CB7B00E44AD2 /* XMPPRosterCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE731895CB8200E44AD2 /* XMPPUserCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA41895CB7B00E44AD2 /* XMPPUserCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE741895CB8200E44AD2 /* XMPPResourceMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA71895CB7B00E44AD2 /* XMPPResourceMemoryStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE751895CB8200E44AD2 /* XMPPRosterMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA91895CB7B00E44AD2 /* XMPPRosterMemoryStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE761895CB8200E44AD2 /* XMPPUserMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBAC1895CB7B00E44AD2 /* XMPPUserMemoryStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE771895CB8200E44AD2 /* XMPPRoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBAF1895CB7B00E44AD2 /* XMPPRoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE781895CB8200E44AD2 /* XMPPSystemInputActivityMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB41895CB7B00E44AD2 /* XMPPSystemInputActivityMonitor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE791895CB8200E44AD2 /* XMPPIQ+JabberRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB71895CB7B00E44AD2 /* XMPPIQ+JabberRPC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7A1895CB8200E44AD2 /* XMPPIQ+JabberRPCResonse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB91895CB7B00E44AD2 /* XMPPIQ+JabberRPCResonse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7B1895CB8200E44AD2 /* XMPPJabberRPCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBBB1895CB7B00E44AD2 /* XMPPJabberRPCModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7C1895CB8200E44AD2 /* XMPPIQ+LastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBBE1895CB7B00E44AD2 /* XMPPIQ+LastActivity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7D1895CB8200E44AD2 /* XMPPLastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC01895CB7B00E44AD2 /* XMPPLastActivity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7E1895CB8200E44AD2 /* XMPPPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC31895CB7B00E44AD2 /* XMPPPrivacy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE7F1895CB8200E44AD2 /* XMPPRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC61895CB7B00E44AD2 /* XMPPRoom.xcdatamodeld */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE801895CB8200E44AD2 /* XMPPRoomCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC91895CB7B00E44AD2 /* XMPPRoomCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE811895CB8200E44AD2 /* XMPPRoomMessageCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCB1895CB7B00E44AD2 /* XMPPRoomMessageCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE821895CB8200E44AD2 /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCD1895CB7B00E44AD2 /* XMPPRoomOccupantCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE831895CB8200E44AD2 /* XMPPRoomHybrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCF1895CB7B00E44AD2 /* XMPPRoomHybrid.xcdatamodeld */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE841895CB8200E44AD2 /* XMPPRoomHybridStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD21895CB7B00E44AD2 /* XMPPRoomHybridStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE851895CB8200E44AD2 /* XMPPRoomMessageHybridCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD51895CB7B00E44AD2 /* XMPPRoomMessageHybridCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE861895CB8200E44AD2 /* XMPPRoomOccupantHybridMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD71895CB7B00E44AD2 /* XMPPRoomOccupantHybridMemoryStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE871895CB8200E44AD2 /* XMPPRoomMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDA1895CB7B00E44AD2 /* XMPPRoomMemoryStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE881895CB8200E44AD2 /* XMPPRoomMessageMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDC1895CB7B00E44AD2 /* XMPPRoomMessageMemoryStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE891895CB8200E44AD2 /* XMPPRoomOccupantMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDE1895CB7B00E44AD2 /* XMPPRoomOccupantMemoryStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8A1895CB8200E44AD2 /* XMPPMessage+XEP0045.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE01895CB7B00E44AD2 /* XMPPMessage+XEP0045.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8B1895CB8200E44AD2 /* XMPPMUC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE21895CB7B00E44AD2 /* XMPPMUC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8C1895CB8200E44AD2 /* XMPPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE41895CB7B00E44AD2 /* XMPPRoom.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8D1895CB8200E44AD2 /* XMPPvCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBEA1895CB7B00E44AD2 /* XMPPvCard.xcdatamodeld */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8E1895CB8200E44AD2 /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBED1895CB7B00E44AD2 /* XMPPvCardAvatarCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE8F1895CB8200E44AD2 /* XMPPvCardCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBEF1895CB7B00E44AD2 /* XMPPvCardCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE901895CB8200E44AD2 /* XMPPvCardCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF11895CB7B00E44AD2 /* XMPPvCardCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE911895CB8200E44AD2 /* XMPPvCardTempCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF31895CB7B00E44AD2 /* XMPPvCardTempCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE921895CB8200E44AD2 /* XMPPvCardTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF51895CB7B00E44AD2 /* XMPPvCardTemp.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE931895CB8200E44AD2 /* XMPPvCardTempAdr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF71895CB7B00E44AD2 /* XMPPvCardTempAdr.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE941895CB8200E44AD2 /* XMPPvCardTempAdrTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF91895CB7B00E44AD2 /* XMPPvCardTempAdrTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE951895CB8200E44AD2 /* XMPPvCardTempBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFB1895CB7B00E44AD2 /* XMPPvCardTempBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE961895CB8200E44AD2 /* XMPPvCardTempEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFD1895CB7B00E44AD2 /* XMPPvCardTempEmail.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE971895CB8200E44AD2 /* XMPPvCardTempLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFF1895CB7B00E44AD2 /* XMPPvCardTempLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE981895CB8200E44AD2 /* XMPPvCardTempModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC011895CB7B00E44AD2 /* XMPPvCardTempModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE991895CB8200E44AD2 /* XMPPvCardTempTel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC031895CB7B00E44AD2 /* XMPPvCardTempTel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9A1895CB8200E44AD2 /* NSXMLElement+XEP_0059.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC061895CB7B00E44AD2 /* NSXMLElement+XEP_0059.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9B1895CB8200E44AD2 /* XMPPResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC081895CB7B00E44AD2 /* XMPPResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9C1895CB8200E44AD2 /* XMPPIQ+XEP_0060.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC0B1895CB7B00E44AD2 /* XMPPIQ+XEP_0060.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9D1895CB8200E44AD2 /* XMPPPubSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC0D1895CB7B00E44AD2 /* XMPPPubSub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9E1895CB8200E44AD2 /* TURNSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC101895CB7B00E44AD2 /* TURNSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEE9F1895CB8200E44AD2 /* XMPPIQ+XEP_0066.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC131895CB7B00E44AD2 /* XMPPIQ+XEP_0066.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA01895CB8200E44AD2 /* XMPPMessage+XEP_0066.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC151895CB7B00E44AD2 /* XMPPMessage+XEP_0066.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8AEE621895CB8200E44AD2 /* XMPPElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB781895CB7B00E44AD2 /* XMPPElement.m */; };
+		3C8AEE631895CB8200E44AD2 /* XMPPIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB7B1895CB7B00E44AD2 /* XMPPIQ.m */; };
+		3C8AEE641895CB8200E44AD2 /* XMPPJID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB7D1895CB7B00E44AD2 /* XMPPJID.m */; };
+		3C8AEE651895CB8200E44AD2 /* XMPPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB801895CB7B00E44AD2 /* XMPPMessage.m */; };
+		3C8AEE661895CB8200E44AD2 /* XMPPModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB821895CB7B00E44AD2 /* XMPPModule.m */; };
+		3C8AEE671895CB8200E44AD2 /* XMPPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB841895CB7B00E44AD2 /* XMPPParser.m */; };
+		3C8AEE681895CB8200E44AD2 /* XMPPPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB861895CB7B00E44AD2 /* XMPPPresence.m */; };
+		3C8AEE691895CB8200E44AD2 /* XMPPStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB881895CB7B00E44AD2 /* XMPPStream.m */; };
+		3C8AEE6A1895CB8200E44AD2 /* XMPPBandwidthMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB8C1895CB7B00E44AD2 /* XMPPBandwidthMonitor.m */; };
+		3C8AEE6B1895CB8200E44AD2 /* XMPPCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB8F1895CB7B00E44AD2 /* XMPPCoreDataStorage.m */; };
+		3C8AEE6C1895CB8200E44AD2 /* XMPPGoogleSharedStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB931895CB7B00E44AD2 /* XMPPGoogleSharedStatus.m */; };
+		3C8AEE6D1895CB8200E44AD2 /* XMPPProcessOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB961895CB7B00E44AD2 /* XMPPProcessOne.m */; };
+		3C8AEE6E1895CB8200E44AD2 /* XMPPReconnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB991895CB7B00E44AD2 /* XMPPReconnect.m */; };
+		3C8AEE6F1895CB8200E44AD2 /* XMPPGroupCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB9D1895CB7B00E44AD2 /* XMPPGroupCoreDataStorageObject.m */; };
+		3C8AEE701895CB8200E44AD2 /* XMPPResourceCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB9F1895CB7B00E44AD2 /* XMPPResourceCoreDataStorageObject.m */; };
+		3C8AEE711895CB8200E44AD2 /* XMPPRoster.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA01895CB7B00E44AD2 /* XMPPRoster.xcdatamodel */; };
+		3C8AEE721895CB8200E44AD2 /* XMPPRosterCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA21895CB7B00E44AD2 /* XMPPRosterCoreDataStorage.m */; };
+		3C8AEE731895CB8200E44AD2 /* XMPPUserCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA41895CB7B00E44AD2 /* XMPPUserCoreDataStorageObject.m */; };
+		3C8AEE741895CB8200E44AD2 /* XMPPResourceMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA71895CB7B00E44AD2 /* XMPPResourceMemoryStorageObject.m */; };
+		3C8AEE751895CB8200E44AD2 /* XMPPRosterMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBA91895CB7B00E44AD2 /* XMPPRosterMemoryStorage.m */; };
+		3C8AEE761895CB8200E44AD2 /* XMPPUserMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBAC1895CB7B00E44AD2 /* XMPPUserMemoryStorageObject.m */; };
+		3C8AEE771895CB8200E44AD2 /* XMPPRoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBAF1895CB7B00E44AD2 /* XMPPRoster.m */; };
+		3C8AEE781895CB8200E44AD2 /* XMPPSystemInputActivityMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB41895CB7B00E44AD2 /* XMPPSystemInputActivityMonitor.m */; };
+		3C8AEE791895CB8200E44AD2 /* XMPPIQ+JabberRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB71895CB7B00E44AD2 /* XMPPIQ+JabberRPC.m */; };
+		3C8AEE7A1895CB8200E44AD2 /* XMPPIQ+JabberRPCResonse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBB91895CB7B00E44AD2 /* XMPPIQ+JabberRPCResonse.m */; };
+		3C8AEE7B1895CB8200E44AD2 /* XMPPJabberRPCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBBB1895CB7B00E44AD2 /* XMPPJabberRPCModule.m */; };
+		3C8AEE7C1895CB8200E44AD2 /* XMPPIQ+LastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBBE1895CB7B00E44AD2 /* XMPPIQ+LastActivity.m */; };
+		3C8AEE7D1895CB8200E44AD2 /* XMPPLastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC01895CB7B00E44AD2 /* XMPPLastActivity.m */; };
+		3C8AEE7E1895CB8200E44AD2 /* XMPPPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC31895CB7B00E44AD2 /* XMPPPrivacy.m */; };
+		3C8AEE7F1895CB8200E44AD2 /* XMPPRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC61895CB7B00E44AD2 /* XMPPRoom.xcdatamodeld */; };
+		3C8AEE801895CB8200E44AD2 /* XMPPRoomCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBC91895CB7B00E44AD2 /* XMPPRoomCoreDataStorage.m */; };
+		3C8AEE811895CB8200E44AD2 /* XMPPRoomMessageCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCB1895CB7B00E44AD2 /* XMPPRoomMessageCoreDataStorageObject.m */; };
+		3C8AEE821895CB8200E44AD2 /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCD1895CB7B00E44AD2 /* XMPPRoomOccupantCoreDataStorageObject.m */; };
+		3C8AEE831895CB8200E44AD2 /* XMPPRoomHybrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBCF1895CB7B00E44AD2 /* XMPPRoomHybrid.xcdatamodeld */; };
+		3C8AEE841895CB8200E44AD2 /* XMPPRoomHybridStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD21895CB7B00E44AD2 /* XMPPRoomHybridStorage.m */; };
+		3C8AEE851895CB8200E44AD2 /* XMPPRoomMessageHybridCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD51895CB7B00E44AD2 /* XMPPRoomMessageHybridCoreDataStorageObject.m */; };
+		3C8AEE861895CB8200E44AD2 /* XMPPRoomOccupantHybridMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBD71895CB7B00E44AD2 /* XMPPRoomOccupantHybridMemoryStorageObject.m */; };
+		3C8AEE871895CB8200E44AD2 /* XMPPRoomMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDA1895CB7B00E44AD2 /* XMPPRoomMemoryStorage.m */; };
+		3C8AEE881895CB8200E44AD2 /* XMPPRoomMessageMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDC1895CB7B00E44AD2 /* XMPPRoomMessageMemoryStorageObject.m */; };
+		3C8AEE891895CB8200E44AD2 /* XMPPRoomOccupantMemoryStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBDE1895CB7B00E44AD2 /* XMPPRoomOccupantMemoryStorageObject.m */; };
+		3C8AEE8A1895CB8200E44AD2 /* XMPPMessage+XEP0045.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE01895CB7B00E44AD2 /* XMPPMessage+XEP0045.m */; };
+		3C8AEE8B1895CB8200E44AD2 /* XMPPMUC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE21895CB7B00E44AD2 /* XMPPMUC.m */; };
+		3C8AEE8C1895CB8200E44AD2 /* XMPPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBE41895CB7B00E44AD2 /* XMPPRoom.m */; };
+		3C8AEE8D1895CB8200E44AD2 /* XMPPvCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBEA1895CB7B00E44AD2 /* XMPPvCard.xcdatamodeld */; };
+		3C8AEE8E1895CB8200E44AD2 /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBED1895CB7B00E44AD2 /* XMPPvCardAvatarCoreDataStorageObject.m */; };
+		3C8AEE8F1895CB8200E44AD2 /* XMPPvCardCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBEF1895CB7B00E44AD2 /* XMPPvCardCoreDataStorage.m */; };
+		3C8AEE901895CB8200E44AD2 /* XMPPvCardCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF11895CB7B00E44AD2 /* XMPPvCardCoreDataStorageObject.m */; };
+		3C8AEE911895CB8200E44AD2 /* XMPPvCardTempCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF31895CB7B00E44AD2 /* XMPPvCardTempCoreDataStorageObject.m */; };
+		3C8AEE921895CB8200E44AD2 /* XMPPvCardTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF51895CB7B00E44AD2 /* XMPPvCardTemp.m */; };
+		3C8AEE931895CB8200E44AD2 /* XMPPvCardTempAdr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF71895CB7B00E44AD2 /* XMPPvCardTempAdr.m */; };
+		3C8AEE941895CB8200E44AD2 /* XMPPvCardTempAdrTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBF91895CB7B00E44AD2 /* XMPPvCardTempAdrTypes.m */; };
+		3C8AEE951895CB8200E44AD2 /* XMPPvCardTempBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFB1895CB7B00E44AD2 /* XMPPvCardTempBase.m */; };
+		3C8AEE961895CB8200E44AD2 /* XMPPvCardTempEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFD1895CB7B00E44AD2 /* XMPPvCardTempEmail.m */; };
+		3C8AEE971895CB8200E44AD2 /* XMPPvCardTempLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEBFF1895CB7B00E44AD2 /* XMPPvCardTempLabel.m */; };
+		3C8AEE981895CB8200E44AD2 /* XMPPvCardTempModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC011895CB7B00E44AD2 /* XMPPvCardTempModule.m */; };
+		3C8AEE991895CB8200E44AD2 /* XMPPvCardTempTel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC031895CB7B00E44AD2 /* XMPPvCardTempTel.m */; };
+		3C8AEE9A1895CB8200E44AD2 /* NSXMLElement+XEP_0059.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC061895CB7B00E44AD2 /* NSXMLElement+XEP_0059.m */; };
+		3C8AEE9B1895CB8200E44AD2 /* XMPPResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC081895CB7B00E44AD2 /* XMPPResultSet.m */; };
+		3C8AEE9C1895CB8200E44AD2 /* XMPPIQ+XEP_0060.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC0B1895CB7B00E44AD2 /* XMPPIQ+XEP_0060.m */; };
+		3C8AEE9D1895CB8200E44AD2 /* XMPPPubSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC0D1895CB7B00E44AD2 /* XMPPPubSub.m */; };
+		3C8AEE9E1895CB8200E44AD2 /* TURNSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC101895CB7B00E44AD2 /* TURNSocket.m */; };
+		3C8AEE9F1895CB8200E44AD2 /* XMPPIQ+XEP_0066.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC131895CB7B00E44AD2 /* XMPPIQ+XEP_0066.m */; };
+		3C8AEEA01895CB8200E44AD2 /* XMPPMessage+XEP_0066.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC151895CB7B00E44AD2 /* XMPPMessage+XEP_0066.m */; };
 		3C8AEEA11895CB8200E44AD2 /* XMPPInBandReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC181895CB7B00E44AD2 /* XMPPInBandReg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA21895CB8200E44AD2 /* NSDate+XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC1B1895CB7B00E44AD2 /* NSDate+XMPPDateTimeProfiles.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA31895CB8200E44AD2 /* XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC1D1895CB7B00E44AD2 /* XMPPDateTimeProfiles.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA41895CB8200E44AD2 /* XMPPMessage+XEP_0085.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC201895CB7B00E44AD2 /* XMPPMessage+XEP_0085.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA51895CB8200E44AD2 /* XMPPTransports.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC231895CB7B00E44AD2 /* XMPPTransports.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA61895CB8200E44AD2 /* NSString+XEP_0106.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC261895CB7B00E44AD2 /* NSString+XEP_0106.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA71895CB8200E44AD2 /* XMPPCapabilities.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC291895CB7B00E44AD2 /* XMPPCapabilities.xcdatamodel */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA81895CB8200E44AD2 /* XMPPCapabilitiesCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2B1895CB7B00E44AD2 /* XMPPCapabilitiesCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEA91895CB8200E44AD2 /* XMPPCapsCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2D1895CB7B00E44AD2 /* XMPPCapsCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAA1895CB8200E44AD2 /* XMPPCapsResourceCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2F1895CB7B00E44AD2 /* XMPPCapsResourceCoreDataStorageObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAB1895CB8200E44AD2 /* XMPPCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC311895CB7B00E44AD2 /* XMPPCapabilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAC1895CB8200E44AD2 /* XMPPMessageArchiving.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC341895CB7B00E44AD2 /* XMPPMessageArchiving.xcdatamodeld */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAD1895CB8200E44AD2 /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC371895CB7C00E44AD2 /* XMPPMessageArchiving_Contact_CoreDataObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAE1895CB8200E44AD2 /* XMPPMessageArchiving_Message_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC391895CB7C00E44AD2 /* XMPPMessageArchiving_Message_CoreDataObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEAF1895CB8200E44AD2 /* XMPPMessageArchivingCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC3B1895CB7C00E44AD2 /* XMPPMessageArchivingCoreDataStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB01895CB8200E44AD2 /* XMPPMessageArchiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC3D1895CB7C00E44AD2 /* XMPPMessageArchiving.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB11895CB8200E44AD2 /* XMPPvCardAvatarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC401895CB7C00E44AD2 /* XMPPvCardAvatarModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB21895CB8200E44AD2 /* XMPPMessage+XEP_0172.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC431895CB7C00E44AD2 /* XMPPMessage+XEP_0172.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB31895CB8200E44AD2 /* XMPPPresence+XEP_0172.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC451895CB7C00E44AD2 /* XMPPPresence+XEP_0172.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB41895CB8200E44AD2 /* XMPPMessage+XEP_0184.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC481895CB7C00E44AD2 /* XMPPMessage+XEP_0184.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB51895CB8200E44AD2 /* XMPPMessageDeliveryReceipts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4A1895CB7C00E44AD2 /* XMPPMessageDeliveryReceipts.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB61895CB8200E44AD2 /* XMPPAutoPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4D1895CB7C00E44AD2 /* XMPPAutoPing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB71895CB8200E44AD2 /* XMPPPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4F1895CB7C00E44AD2 /* XMPPPing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB81895CB8200E44AD2 /* XMPPAutoTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC521895CB7C00E44AD2 /* XMPPAutoTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEB91895CB8200E44AD2 /* XMPPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC541895CB7C00E44AD2 /* XMPPTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBA1895CB8200E44AD2 /* NSXMLElement+XEP_0203.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC571895CB7C00E44AD2 /* NSXMLElement+XEP_0203.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBB1895CB8200E44AD2 /* XEP_0223.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5A1895CB7C00E44AD2 /* XEP_0223.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBC1895CB8200E44AD2 /* XMPPAttentionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5D1895CB7C00E44AD2 /* XMPPAttentionModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBD1895CB8200E44AD2 /* XMPPMessage+XEP_0224.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5F1895CB7C00E44AD2 /* XMPPMessage+XEP_0224.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBE1895CB8200E44AD2 /* NSXMLElement+XEP_0297.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC621895CB7C00E44AD2 /* NSXMLElement+XEP_0297.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEBF1895CB8200E44AD2 /* XMPPMessage+XEP_0308.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC651895CB7C00E44AD2 /* XMPPMessage+XEP_0308.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8AEEA21895CB8200E44AD2 /* NSDate+XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC1B1895CB7B00E44AD2 /* NSDate+XMPPDateTimeProfiles.m */; };
+		3C8AEEA31895CB8200E44AD2 /* XMPPDateTimeProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC1D1895CB7B00E44AD2 /* XMPPDateTimeProfiles.m */; };
+		3C8AEEA41895CB8200E44AD2 /* XMPPMessage+XEP_0085.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC201895CB7B00E44AD2 /* XMPPMessage+XEP_0085.m */; };
+		3C8AEEA51895CB8200E44AD2 /* XMPPTransports.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC231895CB7B00E44AD2 /* XMPPTransports.m */; };
+		3C8AEEA61895CB8200E44AD2 /* NSString+XEP_0106.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC261895CB7B00E44AD2 /* NSString+XEP_0106.m */; };
+		3C8AEEA71895CB8200E44AD2 /* XMPPCapabilities.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC291895CB7B00E44AD2 /* XMPPCapabilities.xcdatamodel */; };
+		3C8AEEA81895CB8200E44AD2 /* XMPPCapabilitiesCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2B1895CB7B00E44AD2 /* XMPPCapabilitiesCoreDataStorage.m */; };
+		3C8AEEA91895CB8200E44AD2 /* XMPPCapsCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2D1895CB7B00E44AD2 /* XMPPCapsCoreDataStorageObject.m */; };
+		3C8AEEAA1895CB8200E44AD2 /* XMPPCapsResourceCoreDataStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC2F1895CB7B00E44AD2 /* XMPPCapsResourceCoreDataStorageObject.m */; };
+		3C8AEEAB1895CB8200E44AD2 /* XMPPCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC311895CB7B00E44AD2 /* XMPPCapabilities.m */; };
+		3C8AEEAC1895CB8200E44AD2 /* XMPPMessageArchiving.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC341895CB7B00E44AD2 /* XMPPMessageArchiving.xcdatamodeld */; };
+		3C8AEEAD1895CB8200E44AD2 /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC371895CB7C00E44AD2 /* XMPPMessageArchiving_Contact_CoreDataObject.m */; };
+		3C8AEEAE1895CB8200E44AD2 /* XMPPMessageArchiving_Message_CoreDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC391895CB7C00E44AD2 /* XMPPMessageArchiving_Message_CoreDataObject.m */; };
+		3C8AEEAF1895CB8200E44AD2 /* XMPPMessageArchivingCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC3B1895CB7C00E44AD2 /* XMPPMessageArchivingCoreDataStorage.m */; };
+		3C8AEEB01895CB8200E44AD2 /* XMPPMessageArchiving.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC3D1895CB7C00E44AD2 /* XMPPMessageArchiving.m */; };
+		3C8AEEB11895CB8200E44AD2 /* XMPPvCardAvatarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC401895CB7C00E44AD2 /* XMPPvCardAvatarModule.m */; };
+		3C8AEEB21895CB8200E44AD2 /* XMPPMessage+XEP_0172.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC431895CB7C00E44AD2 /* XMPPMessage+XEP_0172.m */; };
+		3C8AEEB31895CB8200E44AD2 /* XMPPPresence+XEP_0172.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC451895CB7C00E44AD2 /* XMPPPresence+XEP_0172.m */; };
+		3C8AEEB41895CB8200E44AD2 /* XMPPMessage+XEP_0184.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC481895CB7C00E44AD2 /* XMPPMessage+XEP_0184.m */; };
+		3C8AEEB51895CB8200E44AD2 /* XMPPMessageDeliveryReceipts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4A1895CB7C00E44AD2 /* XMPPMessageDeliveryReceipts.m */; };
+		3C8AEEB61895CB8200E44AD2 /* XMPPAutoPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4D1895CB7C00E44AD2 /* XMPPAutoPing.m */; };
+		3C8AEEB71895CB8200E44AD2 /* XMPPPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC4F1895CB7C00E44AD2 /* XMPPPing.m */; };
+		3C8AEEB81895CB8200E44AD2 /* XMPPAutoTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC521895CB7C00E44AD2 /* XMPPAutoTime.m */; };
+		3C8AEEB91895CB8200E44AD2 /* XMPPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC541895CB7C00E44AD2 /* XMPPTime.m */; };
+		3C8AEEBA1895CB8200E44AD2 /* NSXMLElement+XEP_0203.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC571895CB7C00E44AD2 /* NSXMLElement+XEP_0203.m */; };
+		3C8AEEBB1895CB8200E44AD2 /* XEP_0223.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5A1895CB7C00E44AD2 /* XEP_0223.m */; };
+		3C8AEEBC1895CB8200E44AD2 /* XMPPAttentionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5D1895CB7C00E44AD2 /* XMPPAttentionModule.m */; };
+		3C8AEEBD1895CB8200E44AD2 /* XMPPMessage+XEP_0224.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC5F1895CB7C00E44AD2 /* XMPPMessage+XEP_0224.m */; };
+		3C8AEEBE1895CB8200E44AD2 /* NSXMLElement+XEP_0297.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC621895CB7C00E44AD2 /* NSXMLElement+XEP_0297.m */; };
+		3C8AEEBF1895CB8200E44AD2 /* XMPPMessage+XEP_0308.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC651895CB7C00E44AD2 /* XMPPMessage+XEP_0308.m */; };
 		3C8AEEC01895CB8200E44AD2 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEC661895CB7C00E44AD2 /* README.markdown */; };
-		3C8AEEC11895CB8200E44AD2 /* DDList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC691895CB7C00E44AD2 /* DDList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC21895CB8200E44AD2 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6B1895CB7C00E44AD2 /* GCDMulticastDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC31895CB8200E44AD2 /* RFImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6D1895CB7C00E44AD2 /* RFImageToDataTransformer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC41895CB8200E44AD2 /* XMPPIDTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6F1895CB7C00E44AD2 /* XMPPIDTracker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC51895CB8200E44AD2 /* XMPPSRVResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC711895CB7C00E44AD2 /* XMPPSRVResolver.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC61895CB8300E44AD2 /* XMPPStringPrep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC731895CB7C00E44AD2 /* XMPPStringPrep.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC71895CB8300E44AD2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC771895CB7C00E44AD2 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC81895CB8300E44AD2 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7A1895CB7C00E44AD2 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEEC91895CB8300E44AD2 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7C1895CB7C00E44AD2 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEECA1895CB8300E44AD2 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7E1895CB7C00E44AD2 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEECB1895CB8300E44AD2 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC801895CB7C00E44AD2 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEECC1895CB8300E44AD2 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC821895CB7C00E44AD2 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEECD1895CB8300E44AD2 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC851895CB7C00E44AD2 /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEECE1895CB8300E44AD2 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC871895CB7C00E44AD2 /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8AEEC11895CB8200E44AD2 /* DDList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC691895CB7C00E44AD2 /* DDList.m */; };
+		3C8AEEC21895CB8200E44AD2 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6B1895CB7C00E44AD2 /* GCDMulticastDelegate.m */; };
+		3C8AEEC31895CB8200E44AD2 /* RFImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6D1895CB7C00E44AD2 /* RFImageToDataTransformer.m */; };
+		3C8AEEC41895CB8200E44AD2 /* XMPPIDTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC6F1895CB7C00E44AD2 /* XMPPIDTracker.m */; };
+		3C8AEEC51895CB8200E44AD2 /* XMPPSRVResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC711895CB7C00E44AD2 /* XMPPSRVResolver.m */; };
+		3C8AEEC61895CB8300E44AD2 /* XMPPStringPrep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC731895CB7C00E44AD2 /* XMPPStringPrep.m */; };
+		3C8AEEC71895CB8300E44AD2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC771895CB7C00E44AD2 /* GCDAsyncSocket.m */; };
+		3C8AEEC81895CB8300E44AD2 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7A1895CB7C00E44AD2 /* DDAbstractDatabaseLogger.m */; };
+		3C8AEEC91895CB8300E44AD2 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7C1895CB7C00E44AD2 /* DDASLLogger.m */; };
+		3C8AEECA1895CB8300E44AD2 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC7E1895CB7C00E44AD2 /* DDFileLogger.m */; };
+		3C8AEECB1895CB8300E44AD2 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC801895CB7C00E44AD2 /* DDLog.m */; };
+		3C8AEECC1895CB8300E44AD2 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC821895CB7C00E44AD2 /* DDTTYLogger.m */; };
+		3C8AEECD1895CB8300E44AD2 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC851895CB7C00E44AD2 /* ContextFilterLogFormatter.m */; };
+		3C8AEECE1895CB8300E44AD2 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC871895CB7C00E44AD2 /* DispatchQueueLogFormatter.m */; };
 		3C8AEECF1895CB8300E44AD2 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEC881895CB7C00E44AD2 /* README.txt */; };
-		3C8AEED01895CB8300E44AD2 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC8D1895CB7C00E44AD2 /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEED11895CB8300E44AD2 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC901895CB7C00E44AD2 /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEED21895CB8300E44AD2 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC921895CB7C00E44AD2 /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C8AEED31895CB8300E44AD2 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC941895CB7C00E44AD2 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C8AEED01895CB8300E44AD2 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC8D1895CB7C00E44AD2 /* NSString+DDXML.m */; };
+		3C8AEED11895CB8300E44AD2 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC901895CB7C00E44AD2 /* DDXMLDocument.m */; };
+		3C8AEED21895CB8300E44AD2 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC921895CB7C00E44AD2 /* DDXMLElement.m */; };
+		3C8AEED31895CB8300E44AD2 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEC941895CB7C00E44AD2 /* DDXMLNode.m */; };
 		3C8AEED41895CB8300E44AD2 /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEC981895CB7C00E44AD2 /* build-libidn.sh */; };
 		3C8AEED51895CB8300E44AD2 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEC9A1895CB7C00E44AD2 /* libidn.a */; };
 		3C8AEFCD1895D29700E44AD2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEFCC1895D29600E44AD2 /* libxml2.dylib */; };
@@ -196,6 +196,11 @@
 		3C8AEFD91895EAE000E44AD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEFD81895EADF00E44AD2 /* SystemConfiguration.framework */; };
 		3C8AEFDD1895F81E00E44AD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEFDC1895F81D00E44AD2 /* QuartzCore.framework */; };
 		3C8AEFDE1895FBBE00E44AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B578A189361C200FF4C48 /* Foundation.framework */; };
+		3CE36CB618964CC400617C29 /* LyphyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB518964CC400617C29 /* LyphyLoadingView.m */; };
+		3CE36CBA1896608E00617C29 /* LyphyNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB91896608E00617C29 /* LyphyNetworkClient.m */; };
+		3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CBD1896C72B00617C29 /* SecureUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CC818970B3C00617C29 /* LyphyFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */; };
+		3CE36CC918970B3C00617C29 /* LyphyFindFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */; };
 		3CE760581893C979007F393F /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604D1893C979007F393F /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE760591893C979007F393F /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604F1893C979007F393F /* ImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE7605A1893C979007F393F /* ImageCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760511893C979007F393F /* ImageCacheObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -545,6 +550,15 @@
 		3C8AEFD81895EADF00E44AD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3C8AEFDA1895F4B500E44AD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3C8AEFDC1895F81D00E44AD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CE36CB418964CC400617C29 /* LyphyLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyLoadingView.h; sourceTree = "<group>"; };
+		3CE36CB518964CC400617C29 /* LyphyLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyLoadingView.m; sourceTree = "<group>"; };
+		3CE36CB81896608E00617C29 /* LyphyNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyNetworkClient.h; sourceTree = "<group>"; };
+		3CE36CB91896608E00617C29 /* LyphyNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyNetworkClient.m; sourceTree = "<group>"; };
+		3CE36CBC1896C72B00617C29 /* SecureUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureUDID.h; sourceTree = "<group>"; };
+		3CE36CBD1896C72B00617C29 /* SecureUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureUDID.m; sourceTree = "<group>"; };
+		3CE36CC518970B3C00617C29 /* LyphyFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyFindFriendsViewController.h; sourceTree = "<group>"; };
+		3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyFindFriendsViewController.m; sourceTree = "<group>"; };
+		3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyFindFriendsViewController.xib; sourceTree = "<group>"; };
 		3CE7604C1893C979007F393F /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		3CE7604D1893C979007F393F /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		3CE7604E1893C979007F393F /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
@@ -647,6 +661,7 @@
 				3C8AEB231894AF8C00E44AD2 /* LyphySettingsViewController.h */,
 				3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */,
 				3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */,
+				3CE36CC418970B3800617C29 /* FindFriends */,
 				3C8AEB501895C5C600E44AD2 /* Settings */,
 				3C8AEB371894F81600E44AD2 /* SWRevealViewController */,
 				3C8AEB361894F71E00E44AD2 /* ChattingRoom */,
@@ -744,6 +759,7 @@
 		3C8AEB541895CB7A00E44AD2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36CBB1896C72B00617C29 /* SecureUDID */,
 				3C8AEB551895CB7B00E44AD2 /* xmpp */,
 			);
 			path = Library;
@@ -1506,9 +1522,48 @@
 			path = libidn;
 			sourceTree = "<group>";
 		};
+		3CE36CB318964CC400617C29 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CB418964CC400617C29 /* LyphyLoadingView.h */,
+				3CE36CB518964CC400617C29 /* LyphyLoadingView.m */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		3CE36CB71896607100617C29 /* LyphyNetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CB81896608E00617C29 /* LyphyNetworkClient.h */,
+				3CE36CB91896608E00617C29 /* LyphyNetworkClient.m */,
+			);
+			path = LyphyNetworkClient;
+			sourceTree = "<group>";
+		};
+		3CE36CBB1896C72B00617C29 /* SecureUDID */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CBC1896C72B00617C29 /* SecureUDID.h */,
+				3CE36CBD1896C72B00617C29 /* SecureUDID.m */,
+			);
+			path = SecureUDID;
+			sourceTree = "<group>";
+		};
+		3CE36CC418970B3800617C29 /* FindFriends */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CC518970B3C00617C29 /* LyphyFindFriendsViewController.h */,
+				3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */,
+				3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */,
+			);
+			path = FindFriends;
+			sourceTree = "<group>";
+		};
 		3CE7604A1893C979007F393F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36CB71896607100617C29 /* LyphyNetworkClient */,
+				3CE36CB318964CC400617C29 /* LoadingView */,
 				3CE7604B1893C979007F393F /* AsyncImageView */,
 				3CE760521893C979007F393F /* DTFoundation */,
 				3CE760551893C979007F393F /* ImagePickerViewController */,
@@ -1641,6 +1696,7 @@
 				3C8AEEC01895CB8200E44AD2 /* README.markdown in Resources */,
 				3C8AEECF1895CB8300E44AD2 /* README.txt in Resources */,
 				3C8AEED41895CB8300E44AD2 /* build-libidn.sh in Resources */,
+				3CE36CC918970B3C00617C29 /* LyphyFindFriendsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1792,6 +1848,10 @@
 				3C8AEED11895CB8300E44AD2 /* DDXMLDocument.m in Sources */,
 				3C8AEED21895CB8300E44AD2 /* DDXMLElement.m in Sources */,
 				3C8AEED31895CB8300E44AD2 /* DDXMLNode.m in Sources */,
+				3CE36CB618964CC400617C29 /* LyphyLoadingView.m in Sources */,
+				3CE36CBA1896608E00617C29 /* LyphyNetworkClient.m in Sources */,
+				3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */,
+				3CE36CC818970B3C00617C29 /* LyphyFindFriendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1842,7 +1902,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1866,7 +1926,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1882,7 +1942,7 @@
 				GCC_PREFIX_HEADER = "Lyphy/Lyphy-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Lyphy/Lyphy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Library/xmpp/Vendor/libidn\"",
@@ -1903,7 +1963,7 @@
 				GCC_PREFIX_HEADER = "Lyphy/Lyphy-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Lyphy/Lyphy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Library/xmpp/Vendor/libidn\"",

@@ -10,6 +10,9 @@
 #import "LyphySyncPhoneViewController.h"
 #import "DTActionSheet.h"
 #import "ImagePickerViewController.h"
+#import "LyphySettings.h"
+#import "LyphyAppDelegate.h"
+#import "LyphyNetworkClient.h"
 
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <QuartzCore/QuartzCore.h>
@@ -100,6 +103,109 @@
 - (IBAction)saveBtnTapped:(id)sender {
     [self.edtFullName resignFirstResponder];
     [self.edtLyphyID resignFirstResponder];
+    
+    if ([self.edtFullName.text isEqualToString:@""]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please enter your full name." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
+    if ([self.edtLyphyID.text isEqualToString:@""]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please enter your Lyphy ID." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
+    
+    [[LyphySettings sharedInstance] setUserFullName:self.edtFullName.text];
+    [[LyphySettings sharedInstance] setUserName:self.edtLyphyID.text];
+    [[LyphySettings sharedInstance] setImgPhoto:self.imvPhoto.image];
+    
+    [[LyphyAppDelegate sharedInstance].loadingView.titleLabel setText:@"Signing up..."];
+    [UIView animateWithDuration:0.3
+					 animations:^{
+						 [[LyphyAppDelegate sharedInstance].loadingView setAlpha:1];
+					 }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        SignupStatus signupStatus = [[LyphyNetworkClient sharedInstance] signup];
+        NSNumber *numStatus = [NSNumber numberWithInt:signupStatus];
+        
+        [self performSelectorOnMainThread:@selector(signup:) withObject:numStatus waitUntilDone:NO];
+    });
+    
+    
+}
+
+- (void)signup:(id)sender {
+    SignupStatus signupStatus = [(NSNumber *)sender integerValue];
+    
+    [[LyphyAppDelegate sharedInstance].loadingView setAlpha:0];
+    
+    if (signupStatus == SIGNUP_USEREXISTS) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:[NSString stringWithFormat:@"%@ is already used. Please use another Lyphy ID.", [LyphySettings sharedInstance].userName]
+                                                   delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    } else if (signupStatus == SIGNUP_PHONENUMBEREXISTS) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"This phone was already registered. Please use another phone."
+                                                   delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    } else if (signupStatus == SIGNUP_NETWORKCONNECTION_ERROR) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"The server is not running." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    }
+    
+    [[LyphyAppDelegate sharedInstance].loadingView.titleLabel setText:@"Logging in..."];
+    [UIView animateWithDuration:0.3
+					 animations:^{
+						 [[LyphyAppDelegate sharedInstance].loadingView setAlpha:1];
+					 }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        LoginStatus loginStatus = [[LyphyNetworkClient sharedInstance]
+                                   loginWithUsername:[LyphySettings sharedInstance].userName
+                                   password:[LyphySettings sharedInstance].password];
+        NSNumber *numStatus = [NSNumber numberWithInt:loginStatus];
+        
+        [self performSelectorOnMainThread:@selector(login:) withObject:numStatus waitUntilDone:NO];
+    });
+}
+
+- (void)login:(id)sender {
+    LoginStatus loginStatus = [(NSNumber *)sender integerValue];
+    
+    [[LyphyAppDelegate sharedInstance].loadingView setAlpha:0];
+    
+    if (loginStatus == LOGIN_FAIL) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"This username or password is invalid." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    } else if (loginStatus == LOGIN_NETWORKCONNECTION_ERROR) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"The server is not running." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userFullName, LYPHY_XMPP_SERVER_NAME] forKey:@"userID"];
+    [[NSUserDefaults standardUserDefaults] setObject:[LyphySettings sharedInstance].password forKey:@"password"];
+    
+    // xmpp connect
+    if (![[LyphyAppDelegate sharedInstance] connect]) {
+        UIAlertView* mes=[[UIAlertView alloc] initWithTitle:@"Warning"
+                                                    message:@"The server is not running." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [mes show];
+        return;
+    }
     
     LyphySyncPhoneViewController *syncPhoneViewController = [[LyphySyncPhoneViewController alloc] initWithNibName:@"LyphySyncPhoneViewController" bundle:nil];
     [self.navigationController pushViewController:syncPhoneViewController animated:YES];

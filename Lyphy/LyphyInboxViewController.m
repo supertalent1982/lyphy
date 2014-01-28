@@ -11,14 +11,61 @@
 #import "SWRevealViewController.h"
 #import "LyphyPhotoUploadViewController.h"
 #import "LyphyChatViewController.h"
+#import "LyphyAppDelegate.h"
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface LyphyInboxViewController () <UITableViewDataSource, UITableViewDataSource, LyphySettingsViewControllerDelegate>
+@interface LyphyInboxViewController () <UITableViewDataSource, UITableViewDataSource, LyphySettingsViewControllerDelegate, NSFetchedResultsControllerDelegate>
 
 @end
 
 @implementation LyphyInboxViewController
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark NSFetchedResultsController
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (NSFetchedResultsController *)fetchedResultsController
+{
+	if (fetchedResultsController == nil)
+	{
+		NSManagedObjectContext *moc = [[LyphyAppDelegate sharedInstance] managedObjectContext_roster];
+		
+		NSEntityDescription *entity = [NSEntityDescription entityForName:@"XMPPUserCoreDataStorageObject"
+		                                          inManagedObjectContext:moc];
+		
+		NSSortDescriptor *sd1 = [[NSSortDescriptor alloc] initWithKey:@"sectionNum" ascending:YES];
+		NSSortDescriptor *sd2 = [[NSSortDescriptor alloc] initWithKey:@"displayName" ascending:YES];
+		
+		NSArray *sortDescriptors = [NSArray arrayWithObjects:sd1, sd2, nil];
+		
+		NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+		[fetchRequest setEntity:entity];
+		[fetchRequest setSortDescriptors:sortDescriptors];
+		[fetchRequest setFetchBatchSize:10];
+		
+		fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+		                                                               managedObjectContext:moc
+		                                                                 sectionNameKeyPath:@"sectionNum"
+		                                                                          cacheName:nil];
+		[fetchedResultsController setDelegate:self];
+		
+		
+		NSError *error = nil;
+		if (![fetchedResultsController performFetch:&error])
+		{
+			NSLog(@"Error performing fetch: %@", error);
+		}
+        
+	}
+	
+	return fetchedResultsController;
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+	[[self tableView] reloadData];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,8 +95,23 @@
 }
 
 #pragma mark - UITableView Deleagate Methods
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return [[[self fetchedResultsController] sections] count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
+{
+	NSArray *sections = [[self fetchedResultsController] sections];
+	
+	if (sectionIndex < [sections count])
+	{
+		id <NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:sectionIndex];
+		return sectionInfo.numberOfObjects;
+	}
+	
+	return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,6 +130,10 @@
     cell.imvAvatar.layer.cornerRadius = 30;
     cell.imvAvatar.layer.masksToBounds = YES;
     
+    XMPPUserCoreDataStorageObject *user = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    NSString *username = user.jid.user;
+    [cell.lblGroupName setText:username];
+    
     return cell;
 }
 
@@ -85,7 +151,9 @@
 - (IBAction)settingsBtnTapped:(id)sender {
     LyphySettingsViewController *settingsViewController = [[LyphySettingsViewController alloc] initWithNibName:@"LyphySettingsViewController" bundle:nil];
     [settingsViewController setDelegate:self];
-    [self presentViewController:settingsViewController animated:YES completion:nil];
+    UINavigationController *settingsNavController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    [settingsNavController setNavigationBarHidden:YES];
+    [self presentViewController:settingsNavController animated:YES completion:nil];
 }
 
 - (IBAction)newLyphyBtnTapped:(id)sender {

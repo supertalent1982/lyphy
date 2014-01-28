@@ -8,6 +8,7 @@
 
 #import "LyphySignupViewController.h"
 #import "LyphyProfileViewController.h"
+#import "LyphySettings.h"
 
 @interface LyphySignupViewController () <UITextFieldDelegate>
 
@@ -43,6 +44,9 @@
 - (IBAction)nextBtnTapped:(id)sender {
     [self.edtNewPassword resignFirstResponder];
     [self.edtEmailAddress resignFirstResponder];
+    
+    [[LyphySettings sharedInstance] setEmailAddress:self.edtEmailAddress.text];
+    [[LyphySettings sharedInstance] setPassword:self.edtNewPassword.text];
     
     LyphyProfileViewController *profileViewController = [[LyphyProfileViewController alloc] initWithNibName:@"LyphyProfileViewController" bundle:nil];
     [self.navigationController pushViewController:profileViewController animated:YES];

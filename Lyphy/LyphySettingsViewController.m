@@ -7,6 +7,7 @@
 //
 
 #import "LyphySettingsViewController.h"
+#import "LyphyFindFriendsViewController.h"
 
 @interface LyphySettingsViewController () <UITextFieldDelegate>
 
@@ -59,6 +60,8 @@
 }
 
 - (IBAction)findFriendsBtnTapped:(id)sender {
+    LyphyFindFriendsViewController *findFriendsViewController = [[LyphyFindFriendsViewController alloc] initWithNibName:@"LyphyFindFriendsViewController" bundle:nil];
+    [self.navigationController pushViewController:findFriendsViewController animated:YES];
 }
 
 #pragma mark - UIKeyboard events
