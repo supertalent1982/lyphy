@@ -201,6 +201,28 @@
 		3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CBD1896C72B00617C29 /* SecureUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE36CC818970B3C00617C29 /* LyphyFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */; };
 		3CE36CC918970B3C00617C29 /* LyphyFindFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */; };
+		3CE36CCD1897656B00617C29 /* LyphyFindFriendsByLyphyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CCB1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.m */; };
+		3CE36CCE1897656B00617C29 /* LyphyFindFriendsByLyphyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CCC1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.xib */; };
+		3CE36CDF1897786B00617C29 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CD11897786B00617C29 /* Annotation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE01897786B00617C29 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CD41897786B00617C29 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE11897786B00617C29 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CD61897786B00617C29 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE21897786B00617C29 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CD81897786B00617C29 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE31897786B00617C29 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CDA1897786B00617C29 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE41897786B00617C29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CDC1897786B00617C29 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CE51897786B00617C29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CDE1897786B00617C29 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CE36CEC189782EA00617C29 /* LyphyFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CEA189782E800617C29 /* LyphyFindFriendsCell.m */; };
+		3CE36CED189782EA00617C29 /* LyphyFindFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CEB189782E900617C29 /* LyphyFindFriendsCell.xib */; };
+		3CE36CEF189788CA00617C29 /* invite-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CEE189788CA00617C29 /* invite-btn.png */; };
+		3CE36CF118978AB100617C29 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE36CF018978AB000617C29 /* AddressBook.framework */; };
+		3CE36CF518978D2C00617C29 /* LyphyPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CF418978D2C00617C29 /* LyphyPerson.m */; };
+		3CE36CFB1897AB6300617C29 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE36CFA1897AB6000617C29 /* MessageUI.framework */; };
+		3CE36CFD1897D63F00617C29 /* send-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36CFC1897D63F00617C29 /* send-btn.png */; };
+		3CE36D001897EA7A00617C29 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CFF1897EA7A00617C29 /* NSString+Utils.m */; };
+		3CE36D031897F26C00617C29 /* SMMessageViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36D021897F26B00617C29 /* SMMessageViewTableCell.m */; };
+		3CE36D061897F70F00617C29 /* aqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36D041897F70F00617C29 /* aqua.png */; };
+		3CE36D071897F70F00617C29 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36D051897F70F00617C29 /* orange.png */; };
+		3CE36D0A1897FEB700617C29 /* emoticons_outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36D081897FEB700617C29 /* emoticons_outline.otf */; };
+		3CE36D0B1897FEB700617C29 /* emoticons.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3CE36D091897FEB700617C29 /* emoticons.otf */; };
 		3CE760581893C979007F393F /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604D1893C979007F393F /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE760591893C979007F393F /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7604F1893C979007F393F /* ImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CE7605A1893C979007F393F /* ImageCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE760511893C979007F393F /* ImageCacheObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -559,6 +581,41 @@
 		3CE36CC518970B3C00617C29 /* LyphyFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyFindFriendsViewController.h; sourceTree = "<group>"; };
 		3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyFindFriendsViewController.m; sourceTree = "<group>"; };
 		3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyFindFriendsViewController.xib; sourceTree = "<group>"; };
+		3CE36CCA1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyFindFriendsByLyphyViewController.h; sourceTree = "<group>"; };
+		3CE36CCB1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyFindFriendsByLyphyViewController.m; sourceTree = "<group>"; };
+		3CE36CCC1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyFindFriendsByLyphyViewController.xib; sourceTree = "<group>"; };
+		3CE36CD01897786B00617C29 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		3CE36CD11897786B00617C29 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		3CE36CD21897786B00617C29 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3CE36CD31897786B00617C29 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3CE36CD41897786B00617C29 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3CE36CD51897786B00617C29 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3CE36CD61897786B00617C29 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3CE36CD71897786B00617C29 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3CE36CD81897786B00617C29 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		3CE36CD91897786B00617C29 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3CE36CDA1897786B00617C29 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		3CE36CDB1897786B00617C29 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3CE36CDC1897786B00617C29 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3CE36CDD1897786B00617C29 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3CE36CDE1897786B00617C29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3CE36CE9189782E800617C29 /* LyphyFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyFindFriendsCell.h; sourceTree = "<group>"; };
+		3CE36CEA189782E800617C29 /* LyphyFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyFindFriendsCell.m; sourceTree = "<group>"; };
+		3CE36CEB189782E900617C29 /* LyphyFindFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyFindFriendsCell.xib; sourceTree = "<group>"; };
+		3CE36CEE189788CA00617C29 /* invite-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite-btn.png"; sourceTree = "<group>"; };
+		3CE36CF018978AB000617C29 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3CE36CF318978D2C00617C29 /* LyphyPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyPerson.h; sourceTree = "<group>"; };
+		3CE36CF418978D2C00617C29 /* LyphyPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyPerson.m; sourceTree = "<group>"; };
+		3CE36CFA1897AB6000617C29 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3CE36CFC1897D63F00617C29 /* send-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn.png"; sourceTree = "<group>"; };
+		3CE36CFE1897EA7A00617C29 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		3CE36CFF1897EA7A00617C29 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		3CE36D011897F26A00617C29 /* SMMessageViewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMessageViewTableCell.h; sourceTree = "<group>"; };
+		3CE36D021897F26B00617C29 /* SMMessageViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMessageViewTableCell.m; sourceTree = "<group>"; };
+		3CE36D041897F70F00617C29 /* aqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aqua.png; sourceTree = "<group>"; };
+		3CE36D051897F70F00617C29 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		3CE36D081897FEB700617C29 /* emoticons_outline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = emoticons_outline.otf; sourceTree = "<group>"; };
+		3CE36D091897FEB700617C29 /* emoticons.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = emoticons.otf; sourceTree = "<group>"; };
 		3CE7604C1893C979007F393F /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		3CE7604D1893C979007F393F /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		3CE7604E1893C979007F393F /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
@@ -577,6 +634,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE36CFB1897AB6300617C29 /* MessageUI.framework in Frameworks */,
+				3CE36CF118978AB100617C29 /* AddressBook.framework in Frameworks */,
 				3C8AEFDE1895FBBE00E44AD2 /* Foundation.framework in Frameworks */,
 				3C8AEFDD1895F81E00E44AD2 /* QuartzCore.framework in Frameworks */,
 				3C8AEFD91895EAE000E44AD2 /* SystemConfiguration.framework in Frameworks */,
@@ -618,6 +677,8 @@
 		3C0B5787189361C200FF4C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36CFA1897AB6000617C29 /* MessageUI.framework */,
+				3CE36CF018978AB000617C29 /* AddressBook.framework */,
 				3C8AEFDC1895F81D00E44AD2 /* QuartzCore.framework */,
 				3C8AEFDA1895F4B500E44AD2 /* AVFoundation.framework */,
 				3C8AEFD81895EADF00E44AD2 /* SystemConfiguration.framework */,
@@ -661,10 +722,11 @@
 				3C8AEB231894AF8C00E44AD2 /* LyphySettingsViewController.h */,
 				3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */,
 				3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */,
+				3C8AEB361894F71E00E44AD2 /* ChattingRoom */,
+				3CE36CF218978D0300617C29 /* DataModel */,
 				3CE36CC418970B3800617C29 /* FindFriends */,
 				3C8AEB501895C5C600E44AD2 /* Settings */,
 				3C8AEB371894F81600E44AD2 /* SWRevealViewController */,
-				3C8AEB361894F71E00E44AD2 /* ChattingRoom */,
 				3C8AEB1618949E8300E44AD2 /* CustomizedTableViewCells */,
 				3CE7604A1893C979007F393F /* Utils */,
 				3C0B578F189361C200FF4C48 /* Supporting Files */,
@@ -675,6 +737,8 @@
 		3C0B578F189361C200FF4C48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36D081897FEB700617C29 /* emoticons_outline.otf */,
+				3CE36D091897FEB700617C29 /* emoticons.otf */,
 				3C0B5790189361C200FF4C48 /* Lyphy-Info.plist */,
 				3C0B5791189361C200FF4C48 /* InfoPlist.strings */,
 				3C0B5794189361C200FF4C48 /* main.m */,
@@ -689,6 +753,10 @@
 		3C13462518937BDB007A52EE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36D041897F70F00617C29 /* aqua.png */,
+				3CE36D051897F70F00617C29 /* orange.png */,
+				3CE36CFC1897D63F00617C29 /* send-btn.png */,
+				3CE36CEE189788CA00617C29 /* invite-btn.png */,
 				3C8AEB4E1895C09F00E44AD2 /* white-back-btn.png */,
 				3C8AEB4C1895BA2900E44AD2 /* camera.png */,
 				3C8AEB4A1894FEC500E44AD2 /* manage-member-btn.png */,
@@ -718,6 +786,11 @@
 				3C8AEB1718949EB400E44AD2 /* LyphyInboxCell.h */,
 				3C8AEB1818949EB400E44AD2 /* LyphyInboxCell.m */,
 				3C8AEB1E1894A68D00E44AD2 /* LyphyInboxCell.xib */,
+				3CE36CE9189782E800617C29 /* LyphyFindFriendsCell.h */,
+				3CE36CEA189782E800617C29 /* LyphyFindFriendsCell.m */,
+				3CE36CEB189782E900617C29 /* LyphyFindFriendsCell.xib */,
+				3CE36D011897F26A00617C29 /* SMMessageViewTableCell.h */,
+				3CE36D021897F26B00617C29 /* SMMessageViewTableCell.m */,
 			);
 			path = CustomizedTableViewCells;
 			sourceTree = "<group>";
@@ -759,6 +832,7 @@
 		3C8AEB541895CB7A00E44AD2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3CE36CCF1897786A00617C29 /* JSON */,
 				3CE36CBB1896C72B00617C29 /* SecureUDID */,
 				3C8AEB551895CB7B00E44AD2 /* xmpp */,
 			);
@@ -1555,8 +1629,44 @@
 				3CE36CC518970B3C00617C29 /* LyphyFindFriendsViewController.h */,
 				3CE36CC618970B3C00617C29 /* LyphyFindFriendsViewController.m */,
 				3CE36CC718970B3C00617C29 /* LyphyFindFriendsViewController.xib */,
+				3CE36CCA1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.h */,
+				3CE36CCB1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.m */,
+				3CE36CCC1897656A00617C29 /* LyphyFindFriendsByLyphyViewController.xib */,
 			);
 			path = FindFriends;
+			sourceTree = "<group>";
+		};
+		3CE36CCF1897786A00617C29 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CD01897786B00617C29 /* Annotation.h */,
+				3CE36CD11897786B00617C29 /* Annotation.m */,
+				3CE36CD21897786B00617C29 /* JSON.h */,
+				3CE36CD31897786B00617C29 /* NSObject+SBJSON.h */,
+				3CE36CD41897786B00617C29 /* NSObject+SBJSON.m */,
+				3CE36CD51897786B00617C29 /* NSString+SBJSON.h */,
+				3CE36CD61897786B00617C29 /* NSString+SBJSON.m */,
+				3CE36CD71897786B00617C29 /* SBJSON.h */,
+				3CE36CD81897786B00617C29 /* SBJSON.m */,
+				3CE36CD91897786B00617C29 /* SBJsonBase.h */,
+				3CE36CDA1897786B00617C29 /* SBJsonBase.m */,
+				3CE36CDB1897786B00617C29 /* SBJsonParser.h */,
+				3CE36CDC1897786B00617C29 /* SBJsonParser.m */,
+				3CE36CDD1897786B00617C29 /* SBJsonWriter.h */,
+				3CE36CDE1897786B00617C29 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3CE36CF218978D0300617C29 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CE36CFE1897EA7A00617C29 /* NSString+Utils.h */,
+				3CE36CFF1897EA7A00617C29 /* NSString+Utils.m */,
+				3CE36CF318978D2C00617C29 /* LyphyPerson.h */,
+				3CE36CF418978D2C00617C29 /* LyphyPerson.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		3CE7604A1893C979007F393F /* Utils */ = {
@@ -1697,6 +1807,14 @@
 				3C8AEECF1895CB8300E44AD2 /* README.txt in Resources */,
 				3C8AEED41895CB8300E44AD2 /* build-libidn.sh in Resources */,
 				3CE36CC918970B3C00617C29 /* LyphyFindFriendsViewController.xib in Resources */,
+				3CE36CCE1897656B00617C29 /* LyphyFindFriendsByLyphyViewController.xib in Resources */,
+				3CE36CED189782EA00617C29 /* LyphyFindFriendsCell.xib in Resources */,
+				3CE36CEF189788CA00617C29 /* invite-btn.png in Resources */,
+				3CE36CFD1897D63F00617C29 /* send-btn.png in Resources */,
+				3CE36D061897F70F00617C29 /* aqua.png in Resources */,
+				3CE36D071897F70F00617C29 /* orange.png in Resources */,
+				3CE36D0A1897FEB700617C29 /* emoticons_outline.otf in Resources */,
+				3CE36D0B1897FEB700617C29 /* emoticons.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1852,6 +1970,18 @@
 				3CE36CBA1896608E00617C29 /* LyphyNetworkClient.m in Sources */,
 				3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */,
 				3CE36CC818970B3C00617C29 /* LyphyFindFriendsViewController.m in Sources */,
+				3CE36CCD1897656B00617C29 /* LyphyFindFriendsByLyphyViewController.m in Sources */,
+				3CE36CDF1897786B00617C29 /* Annotation.m in Sources */,
+				3CE36CE01897786B00617C29 /* NSObject+SBJSON.m in Sources */,
+				3CE36CE11897786B00617C29 /* NSString+SBJSON.m in Sources */,
+				3CE36CE21897786B00617C29 /* SBJSON.m in Sources */,
+				3CE36CE31897786B00617C29 /* SBJsonBase.m in Sources */,
+				3CE36CE41897786B00617C29 /* SBJsonParser.m in Sources */,
+				3CE36CE51897786B00617C29 /* SBJsonWriter.m in Sources */,
+				3CE36CEC189782EA00617C29 /* LyphyFindFriendsCell.m in Sources */,
+				3CE36CF518978D2C00617C29 /* LyphyPerson.m in Sources */,
+				3CE36D001897EA7A00617C29 /* NSString+Utils.m in Sources */,
+				3CE36D031897F26C00617C29 /* SMMessageViewTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

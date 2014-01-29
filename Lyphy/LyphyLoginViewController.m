@@ -49,8 +49,11 @@
     [self.edtNewPassword resignFirstResponder];
     [self.edtEmailAddress resignFirstResponder];
     
-    [[LyphySettings sharedInstance] setUserName:self.edtEmailAddress.text];
+    NSString *username = [self.edtEmailAddress.text lowercaseString];
+    
+    [[LyphySettings sharedInstance] setUserName:username];
     [[LyphySettings sharedInstance] setPassword:self.edtNewPassword.text];
+    [[LyphySettings sharedInstance] setPhotoUrl:[NSString stringWithFormat:@"http://%@/ChatService/uploads/%@.jpg", LYPHY_SERVER_NAME, [username lowercaseString]]];
 
     [[LyphyAppDelegate sharedInstance].loadingView.titleLabel setText:@"Logging in..."];
     [UIView animateWithDuration:0.3
@@ -86,8 +89,11 @@
         return;
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userFullName, LYPHY_XMPP_SERVER_NAME] forKey:@"userID"];
+    NSLog(@"userID:%@:%@", [NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userName, LYPHY_XMPP_SERVER_NAME], [LyphySettings sharedInstance].password);
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userName, LYPHY_XMPP_SERVER_NAME] forKey:@"userID"];
     [[NSUserDefaults standardUserDefaults] setObject:[LyphySettings sharedInstance].password forKey:@"password"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     // xmpp connect
     if (![[LyphyAppDelegate sharedInstance] connect]) {

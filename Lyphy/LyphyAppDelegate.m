@@ -20,6 +20,7 @@
 #import "XMPPvCardCoreDataStorage.h"
 
 #import <CFNetwork/CFNetwork.h>
+#import <AddressBook/AddressBook.h>
 
 #import "DDLog.h"
 #import "DDTTYLogger.h"
@@ -30,7 +31,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 static const int ddLogLevel = LOG_LEVEL_INFO;
 #endif
 
-@interface LyphyAppDelegate() <XMPPRosterDelegate, UIAlertViewDelegate>
+@interface LyphyAppDelegate()
 
 - (void)setupStream;
 - (void)teardownStream;
@@ -42,6 +43,14 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 
 @implementation LyphyAppDelegate
 
+@synthesize xmppStream;
+@synthesize xmppReconnect;
+@synthesize xmppRoster;
+@synthesize xmppRosterStorage;
+@synthesize xmppvCardTempModule;
+@synthesize xmppvCardAvatarModule;
+@synthesize xmppCapabilities;
+@synthesize xmppCapabilitiesStorage;
 
 + (LyphyAppDelegate *)sharedInstance {
 	return (LyphyAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -69,6 +78,20 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     
     // Setup the XMPP stream
 	[self setupStream];
+    
+    ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
+    if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) {
+        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+            // First time access has been granted, add the contact
+        });
+    }
+    else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized) {
+        // The user has previously given access, add the contact
+    }
+    else {
+        // The user has previously denied access
+        // Send an alert telling user to change privacy setting in settings app
+    }
     
     return YES;
 }
@@ -318,6 +341,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
     
 	NSString *jabberID = [[NSUserDefaults standardUserDefaults] stringForKey:@"userID"];
     NSString *jabberPassword = [[NSUserDefaults standardUserDefaults] stringForKey:@"password"];
+    NSLog(@"jabberuserID:%@:%@", jabberID, jabberPassword);
     
 	if (jabberID == nil || jabberPassword == nil) {
 		return NO;

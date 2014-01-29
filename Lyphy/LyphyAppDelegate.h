@@ -12,7 +12,7 @@
 
 #define kInviteSubscription 20140101
 
-@interface LyphyAppDelegate : UIResponder <UIApplicationDelegate> {
+@interface LyphyAppDelegate : UIResponder <UIApplicationDelegate, XMPPRosterDelegate, UIAlertViewDelegate> {
     XMPPStream *xmppStream;
 	XMPPReconnect *xmppReconnect;
     XMPPRoster *xmppRoster;

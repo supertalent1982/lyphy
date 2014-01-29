@@ -9,6 +9,7 @@
 #import "LyphySignupViewController.h"
 #import "LyphyProfileViewController.h"
 #import "LyphySettings.h"
+#import "LyphyNetworkClient.h"
 
 @interface LyphySignupViewController () <UITextFieldDelegate>
 
@@ -45,8 +46,11 @@
     [self.edtNewPassword resignFirstResponder];
     [self.edtEmailAddress resignFirstResponder];
     
-    [[LyphySettings sharedInstance] setEmailAddress:self.edtEmailAddress.text];
+    NSString *username = [self.edtEmailAddress.text lowercaseString];
+    
+    [[LyphySettings sharedInstance] setUserName:username];
     [[LyphySettings sharedInstance] setPassword:self.edtNewPassword.text];
+    [[LyphySettings sharedInstance] setPhotoUrl:[NSString stringWithFormat:@"http://%@/ChatService/uploads/%@.jpg", LYPHY_SERVER_NAME, [username lowercaseString]]];
     
     LyphyProfileViewController *profileViewController = [[LyphyProfileViewController alloc] initWithNibName:@"LyphyProfileViewController" bundle:nil];
     [self.navigationController pushViewController:profileViewController animated:YES];

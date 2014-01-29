@@ -31,6 +31,9 @@ typedef enum {
 
 - (LoginStatus)loginWithUsername:(NSString *)username password:(NSString *)password;
 - (SignupStatus)signup;
+- (void)addLastMessageWithFrom:(NSString *)fromUser to:(NSString *)toUser msg:(NSString *)msg time:(NSString *)time;
 - (void)uploadImage:(NSString *)filename withImage:(UIImage *)image;
+- (NSMutableArray *)searchFriendsWithSearchString:(NSString *)searchString;
+- (NSMutableArray *)getChatHistoryWithSender:(NSString *)sender receiver:(NSString *)receiver;
 
 @end

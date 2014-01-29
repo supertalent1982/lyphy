@@ -195,8 +195,9 @@
         return;
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userFullName, LYPHY_XMPP_SERVER_NAME] forKey:@"userID"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%@@%@", [LyphySettings sharedInstance].userName, LYPHY_XMPP_SERVER_NAME] forKey:@"userID"];
     [[NSUserDefaults standardUserDefaults] setObject:[LyphySettings sharedInstance].password forKey:@"password"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     // xmpp connect
     if (![[LyphyAppDelegate sharedInstance] connect]) {

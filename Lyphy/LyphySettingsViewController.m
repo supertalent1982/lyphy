@@ -7,7 +7,7 @@
 //
 
 #import "LyphySettingsViewController.h"
-#import "LyphyFindFriendsViewController.h"
+#import "LyphyFindFriendsByLyphyViewController.h"
 
 @interface LyphySettingsViewController () <UITextFieldDelegate>
 
@@ -60,7 +60,7 @@
 }
 
 - (IBAction)findFriendsBtnTapped:(id)sender {
-    LyphyFindFriendsViewController *findFriendsViewController = [[LyphyFindFriendsViewController alloc] initWithNibName:@"LyphyFindFriendsViewController" bundle:nil];
+    LyphyFindFriendsByLyphyViewController *findFriendsViewController = [[LyphyFindFriendsByLyphyViewController alloc] initWithNibName:@"LyphyFindFriendsByLyphyViewController" bundle:nil];
     [self.navigationController pushViewController:findFriendsViewController animated:YES];
 }
 

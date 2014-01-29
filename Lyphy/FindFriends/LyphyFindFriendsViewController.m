@@ -7,6 +7,7 @@
 //
 
 #import "LyphyFindFriendsViewController.h"
+#import "LyphyFindFriendsByLyphyViewController.h"
 
 @interface LyphyFindFriendsViewController ()
 
@@ -36,7 +37,8 @@
 }
 
 - (IBAction)findByLyphyTapped:(id)sender {
-    
+    LyphyFindFriendsByLyphyViewController *findFriendsByLyphyController = [[LyphyFindFriendsByLyphyViewController alloc] initWithNibName:@"LyphyFindFriendsByLyphyViewController" bundle:nil];
+    [self.navigationController pushViewController:findFriendsByLyphyController animated:YES];
 }
 
 - (IBAction)findByPhoneTapped:(id)sender {

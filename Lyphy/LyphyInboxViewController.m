@@ -12,6 +12,7 @@
 #import "LyphyPhotoUploadViewController.h"
 #import "LyphyChatViewController.h"
 #import "LyphyAppDelegate.h"
+#import "NSString+Utils.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -80,6 +81,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newMessageReceived:) name:@"newmessageReceived" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,6 +94,7 @@
 #pragma mark - LyphySettingsViewController Delegate Methods
 - (void)logout
 {
+    [[LyphyAppDelegate sharedInstance] disconnect];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
@@ -138,10 +142,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    XMPPUserCoreDataStorageObject *user = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     LyphyPhotoUploadViewController *photoUploadViewController = [[LyphyPhotoUploadViewController alloc] initWithNibName:@"LyphyPhotoUploadViewController" bundle:nil];
     LyphyChatViewController *chatViewController = [[LyphyChatViewController alloc] initWithNibName:@"LyphyChatViewController" bundle:nil];
+    chatViewController.xmppCoreData = user;
     
     SWRevealViewController *chattingRoomViewController = [[SWRevealViewController alloc] initWithRearViewController:photoUploadViewController frontViewController:chatViewController];
     chattingRoomViewController.delegate = photoUploadViewController;
@@ -157,5 +165,14 @@
 }
 
 - (IBAction)newLyphyBtnTapped:(id)sender {
+}
+
+#pragma mark - Chat delegates
+
+- (void)newMessageReceived:(NSNotification *)note {
+    NSMutableDictionary *messageContent = [note object];
+	NSString *m = [messageContent objectForKey:@"msg"];
+	[messageContent setObject:m forKey:@"msg"];
+	[messageContent setObject:[NSString getCurrentTime] forKey:@"time"];
 }
 @end
