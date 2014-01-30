@@ -94,6 +94,10 @@
 #pragma mark - LyphySettingsViewController Delegate Methods
 - (void)logout
 {
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"userID"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"password"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [[LyphyAppDelegate sharedInstance] disconnect];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

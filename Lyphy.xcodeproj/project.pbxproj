@@ -196,6 +196,8 @@
 		3C8AEFD91895EAE000E44AD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEFD81895EADF00E44AD2 /* SystemConfiguration.framework */; };
 		3C8AEFDD1895F81E00E44AD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8AEFDC1895F81D00E44AD2 /* QuartzCore.framework */; };
 		3C8AEFDE1895FBBE00E44AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B578A189361C200FF4C48 /* Foundation.framework */; };
+		3C8F2F6818997C3C00F11AFC /* LyphyNewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */; };
+		3C8F2F6918997C3C00F11AFC /* LyphyNewGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */; };
 		3CE36CB618964CC400617C29 /* LyphyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB518964CC400617C29 /* LyphyLoadingView.m */; };
 		3CE36CBA1896608E00617C29 /* LyphyNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB91896608E00617C29 /* LyphyNetworkClient.m */; };
 		3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CBD1896C72B00617C29 /* SecureUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -572,6 +574,9 @@
 		3C8AEFD81895EADF00E44AD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3C8AEFDA1895F4B500E44AD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3C8AEFDC1895F81D00E44AD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3C8F2F6518997C3C00F11AFC /* LyphyNewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyNewGroupViewController.h; sourceTree = "<group>"; };
+		3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyNewGroupViewController.m; sourceTree = "<group>"; };
+		3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyNewGroupViewController.xib; sourceTree = "<group>"; };
 		3CE36CB418964CC400617C29 /* LyphyLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyLoadingView.h; sourceTree = "<group>"; };
 		3CE36CB518964CC400617C29 /* LyphyLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyLoadingView.m; sourceTree = "<group>"; };
 		3CE36CB81896608E00617C29 /* LyphyNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyNetworkClient.h; sourceTree = "<group>"; };
@@ -722,6 +727,9 @@
 				3C8AEB231894AF8C00E44AD2 /* LyphySettingsViewController.h */,
 				3C8AEB241894AF8D00E44AD2 /* LyphySettingsViewController.m */,
 				3C8AEB251894AF8D00E44AD2 /* LyphySettingsViewController.xib */,
+				3C8F2F6518997C3C00F11AFC /* LyphyNewGroupViewController.h */,
+				3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */,
+				3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */,
 				3C8AEB361894F71E00E44AD2 /* ChattingRoom */,
 				3CE36CF218978D0300617C29 /* DataModel */,
 				3CE36CC418970B3800617C29 /* FindFriends */,
@@ -1815,6 +1823,7 @@
 				3CE36D071897F70F00617C29 /* orange.png in Resources */,
 				3CE36D0A1897FEB700617C29 /* emoticons_outline.otf in Resources */,
 				3CE36D0B1897FEB700617C29 /* emoticons.otf in Resources */,
+				3C8F2F6918997C3C00F11AFC /* LyphyNewGroupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1982,6 +1991,7 @@
 				3CE36CF518978D2C00617C29 /* LyphyPerson.m in Sources */,
 				3CE36D001897EA7A00617C29 /* NSString+Utils.m in Sources */,
 				3CE36D031897F26C00617C29 /* SMMessageViewTableCell.m in Sources */,
+				3C8F2F6818997C3C00F11AFC /* LyphyNewGroupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

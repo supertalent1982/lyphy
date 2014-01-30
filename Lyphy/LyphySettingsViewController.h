@@ -19,6 +19,10 @@
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIButton *findFriendsBtn;
 @property (strong, nonatomic) id<LyphySettingsViewControllerDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UITextField *txtUsername;
+@property (strong, nonatomic) IBOutlet UITextField *txtEmail;
+@property (strong, nonatomic) IBOutlet UITextField *txtPassword;
+@property (strong, nonatomic) IBOutlet UITextField *txtPhoneNumber;
 
 - (IBAction)backBtnTapped:(id)sender;
 - (IBAction)logoutBtnTapped:(id)sender;

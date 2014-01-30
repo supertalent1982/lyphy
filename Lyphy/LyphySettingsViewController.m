@@ -8,6 +8,7 @@
 
 #import "LyphySettingsViewController.h"
 #import "LyphyFindFriendsByLyphyViewController.h"
+#import "LyphySettings.h"
 
 @interface LyphySettingsViewController () <UITextFieldDelegate>
 
@@ -32,6 +33,11 @@
     
     [self.scrollView addSubview:self.contentView];
     [self.scrollView setContentSize:self.contentView.frame.size];
+    
+    [self.txtUsername setText:[LyphySettings sharedInstance].userName];
+    [self.txtEmail setText:[LyphySettings sharedInstance].emailAddress];
+    [self.txtPassword setText:[LyphySettings sharedInstance].password];
+    [self.txtPhoneNumber setText:[LyphySettings sharedInstance].phoneNumber];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onKeyboardHide:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onKeyboardShow:) name:UIKeyboardWillShowNotification object:nil];
