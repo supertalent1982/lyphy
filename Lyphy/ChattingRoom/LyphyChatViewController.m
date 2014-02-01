@@ -67,12 +67,14 @@
         }
         
         [self.tableView reloadData];
-        NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
-                                                       inSection:0];
         
-        [self.tableView scrollToRowAtIndexPath:topIndexPath
+        if (messages.count > 0) {
+            NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
+                                                       inSection:0];
+            [self.tableView scrollToRowAtIndexPath:topIndexPath
                           atScrollPosition:UITableViewScrollPositionMiddle
                                   animated:YES];
+        }
     }
 }
 
@@ -158,11 +160,13 @@
             [self.tableView reloadData];
         }
         
-        NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
+        if (messages.count > 0) {
+            NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
                                                        inSection:0];
-        [self.tableView scrollToRowAtIndexPath:topIndexPath
+            [self.tableView scrollToRowAtIndexPath:topIndexPath
                           atScrollPosition:UITableViewScrollPositionMiddle
                                   animated:YES];
+        }
     }
 }
 
@@ -359,11 +363,13 @@ static CGFloat padding = 30.0;
     
     [UIView commitAnimations];
     
-    NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
-												   inSection:0];
-	[self.tableView scrollToRowAtIndexPath:topIndexPath
-                          atScrollPosition:UITableViewScrollPositionMiddle
-                                  animated:YES];
+    if (messages.count > 0) {
+        NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
+                                                       inSection:0];
+        [self.tableView scrollToRowAtIndexPath:topIndexPath
+                              atScrollPosition:UITableViewScrollPositionMiddle
+                                      animated:YES];
+    }
 
 }
 
@@ -408,11 +414,13 @@ static CGFloat padding = 30.0;
     
     [self.tableView reloadData];
     
-	NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
+    if (messages.count > 0) {
+        NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:messages.count-1
 												   inSection:0];
-	[self.tableView scrollToRowAtIndexPath:topIndexPath
+        [self.tableView scrollToRowAtIndexPath:topIndexPath
 					  atScrollPosition:UITableViewScrollPositionMiddle
 							  animated:YES];
+    }
 }
 
 #pragma mark - UIScrollView Delegate Methods

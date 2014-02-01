@@ -11,6 +11,7 @@
 #import "SWRevealViewController.h"
 #import "LyphyPhotoUploadViewController.h"
 #import "LyphyChatViewController.h"
+#import "LyphyNewGroupViewController.h"
 #import "LyphyAppDelegate.h"
 #import "NSString+Utils.h"
 
@@ -169,6 +170,10 @@
 }
 
 - (IBAction)newLyphyBtnTapped:(id)sender {
+    LyphyNewGroupViewController *newGroupViewController = [[LyphyNewGroupViewController alloc] initWithNibName:@"LyphyNewGroupViewController" bundle:nil];
+    UINavigationController *newGroupNavViewController = [[UINavigationController alloc] initWithRootViewController:newGroupViewController];
+    [newGroupNavViewController setNavigationBarHidden:YES];
+    [self presentViewController:newGroupNavViewController animated:YES completion:nil];
 }
 
 #pragma mark - Chat delegates

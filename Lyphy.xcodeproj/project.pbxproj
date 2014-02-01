@@ -28,6 +28,12 @@
 		3C13463F1893A2A9007A52EE /* LyphyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13463D1893A2A8007A52EE /* LyphyProfileViewController.m */; };
 		3C1346401893A2A9007A52EE /* LyphyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C13463E1893A2A8007A52EE /* LyphyProfileViewController.xib */; };
 		3C1346421893A343007A52EE /* photo-select-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1346411893A343007A52EE /* photo-select-btn.png */; };
+		3C18D768189C7FBD00016819 /* LyphyAddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18D766189C7FBD00016819 /* LyphyAddMemberViewController.m */; };
+		3C18D769189C7FBE00016819 /* LyphyAddMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C18D767189C7FBD00016819 /* LyphyAddMemberViewController.xib */; };
+		3C18D76D189C817900016819 /* LyphyAddMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18D76B189C817900016819 /* LyphyAddMemberCell.m */; };
+		3C18D76E189C817900016819 /* LyphyAddMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C18D76C189C817900016819 /* LyphyAddMemberCell.xib */; };
+		3C18D771189C834000016819 /* cb_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C18D76F189C834000016819 /* cb_off.png */; };
+		3C18D772189C834000016819 /* cb_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C18D770189C834000016819 /* cb_on.png */; };
 		3C8AEB041893D39000E44AD2 /* LyphySyncPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AEB021893D39000E44AD2 /* LyphySyncPhoneViewController.m */; };
 		3C8AEB051893D39000E44AD2 /* LyphySyncPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB031893D39000E44AD2 /* LyphySyncPhoneViewController.xib */; };
 		3C8AEB071893D45600E44AD2 /* next-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AEB061893D45600E44AD2 /* next-btn.png */; };
@@ -198,6 +204,7 @@
 		3C8AEFDE1895FBBE00E44AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B578A189361C200FF4C48 /* Foundation.framework */; };
 		3C8F2F6818997C3C00F11AFC /* LyphyNewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */; };
 		3C8F2F6918997C3C00F11AFC /* LyphyNewGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */; };
+		3C8F2F6B189A19AC00F11AFC /* add-group-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8F2F6A189A19AC00F11AFC /* add-group-btn.png */; };
 		3CE36CB618964CC400617C29 /* LyphyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB518964CC400617C29 /* LyphyLoadingView.m */; };
 		3CE36CBA1896608E00617C29 /* LyphyNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CB91896608E00617C29 /* LyphyNetworkClient.m */; };
 		3CE36CBE1896C72B00617C29 /* SecureUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE36CBD1896C72B00617C29 /* SecureUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -263,6 +270,14 @@
 		3C13463D1893A2A8007A52EE /* LyphyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyProfileViewController.m; sourceTree = "<group>"; };
 		3C13463E1893A2A8007A52EE /* LyphyProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyProfileViewController.xib; sourceTree = "<group>"; };
 		3C1346411893A343007A52EE /* photo-select-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-select-btn.png"; sourceTree = "<group>"; };
+		3C18D765189C7FBD00016819 /* LyphyAddMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyAddMemberViewController.h; sourceTree = "<group>"; };
+		3C18D766189C7FBD00016819 /* LyphyAddMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyAddMemberViewController.m; sourceTree = "<group>"; };
+		3C18D767189C7FBD00016819 /* LyphyAddMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyAddMemberViewController.xib; sourceTree = "<group>"; };
+		3C18D76A189C817900016819 /* LyphyAddMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyAddMemberCell.h; sourceTree = "<group>"; };
+		3C18D76B189C817900016819 /* LyphyAddMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyAddMemberCell.m; sourceTree = "<group>"; };
+		3C18D76C189C817900016819 /* LyphyAddMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyAddMemberCell.xib; sourceTree = "<group>"; };
+		3C18D76F189C834000016819 /* cb_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cb_off.png; sourceTree = "<group>"; };
+		3C18D770189C834000016819 /* cb_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cb_on.png; sourceTree = "<group>"; };
 		3C8AEB011893D39000E44AD2 /* LyphySyncPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphySyncPhoneViewController.h; sourceTree = "<group>"; };
 		3C8AEB021893D39000E44AD2 /* LyphySyncPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphySyncPhoneViewController.m; sourceTree = "<group>"; };
 		3C8AEB031893D39000E44AD2 /* LyphySyncPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphySyncPhoneViewController.xib; sourceTree = "<group>"; };
@@ -577,6 +592,7 @@
 		3C8F2F6518997C3C00F11AFC /* LyphyNewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyNewGroupViewController.h; sourceTree = "<group>"; };
 		3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyNewGroupViewController.m; sourceTree = "<group>"; };
 		3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyphyNewGroupViewController.xib; sourceTree = "<group>"; };
+		3C8F2F6A189A19AC00F11AFC /* add-group-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-group-btn.png"; sourceTree = "<group>"; };
 		3CE36CB418964CC400617C29 /* LyphyLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyLoadingView.h; sourceTree = "<group>"; };
 		3CE36CB518964CC400617C29 /* LyphyLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyphyLoadingView.m; sourceTree = "<group>"; };
 		3CE36CB81896608E00617C29 /* LyphyNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyphyNetworkClient.h; sourceTree = "<group>"; };
@@ -730,6 +746,9 @@
 				3C8F2F6518997C3C00F11AFC /* LyphyNewGroupViewController.h */,
 				3C8F2F6618997C3C00F11AFC /* LyphyNewGroupViewController.m */,
 				3C8F2F6718997C3C00F11AFC /* LyphyNewGroupViewController.xib */,
+				3C18D765189C7FBD00016819 /* LyphyAddMemberViewController.h */,
+				3C18D766189C7FBD00016819 /* LyphyAddMemberViewController.m */,
+				3C18D767189C7FBD00016819 /* LyphyAddMemberViewController.xib */,
 				3C8AEB361894F71E00E44AD2 /* ChattingRoom */,
 				3CE36CF218978D0300617C29 /* DataModel */,
 				3CE36CC418970B3800617C29 /* FindFriends */,
@@ -761,6 +780,9 @@
 		3C13462518937BDB007A52EE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3C18D76F189C834000016819 /* cb_off.png */,
+				3C18D770189C834000016819 /* cb_on.png */,
+				3C8F2F6A189A19AC00F11AFC /* add-group-btn.png */,
 				3CE36D041897F70F00617C29 /* aqua.png */,
 				3CE36D051897F70F00617C29 /* orange.png */,
 				3CE36CFC1897D63F00617C29 /* send-btn.png */,
@@ -797,6 +819,9 @@
 				3CE36CE9189782E800617C29 /* LyphyFindFriendsCell.h */,
 				3CE36CEA189782E800617C29 /* LyphyFindFriendsCell.m */,
 				3CE36CEB189782E900617C29 /* LyphyFindFriendsCell.xib */,
+				3C18D76A189C817900016819 /* LyphyAddMemberCell.h */,
+				3C18D76B189C817900016819 /* LyphyAddMemberCell.m */,
+				3C18D76C189C817900016819 /* LyphyAddMemberCell.xib */,
 				3CE36D011897F26A00617C29 /* SMMessageViewTableCell.h */,
 				3CE36D021897F26B00617C29 /* SMMessageViewTableCell.m */,
 			);
@@ -1824,6 +1849,11 @@
 				3CE36D0A1897FEB700617C29 /* emoticons_outline.otf in Resources */,
 				3CE36D0B1897FEB700617C29 /* emoticons.otf in Resources */,
 				3C8F2F6918997C3C00F11AFC /* LyphyNewGroupViewController.xib in Resources */,
+				3C8F2F6B189A19AC00F11AFC /* add-group-btn.png in Resources */,
+				3C18D769189C7FBE00016819 /* LyphyAddMemberViewController.xib in Resources */,
+				3C18D76E189C817900016819 /* LyphyAddMemberCell.xib in Resources */,
+				3C18D771189C834000016819 /* cb_off.png in Resources */,
+				3C18D772189C834000016819 /* cb_on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1992,6 +2022,8 @@
 				3CE36D001897EA7A00617C29 /* NSString+Utils.m in Sources */,
 				3CE36D031897F26C00617C29 /* SMMessageViewTableCell.m in Sources */,
 				3C8F2F6818997C3C00F11AFC /* LyphyNewGroupViewController.m in Sources */,
+				3C18D768189C7FBD00016819 /* LyphyAddMemberViewController.m in Sources */,
+				3C18D76D189C817900016819 /* LyphyAddMemberCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
